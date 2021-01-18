@@ -10,23 +10,23 @@ public class ManageOpenScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {    
-        LoadQuantity();
+       // LoadQuantity();
     }
 
-    public void OpenChest()
+   /* public void OpenChest()
     {
         if (collection.tickets > 0)
         {
         getRndWeapon.GetComponent<GetRndWeapon>().glowbgAnimation();
            
         }
-    }
+    }*/
     
-    public void LoadQuantity()
+ /*   public void LoadQuantity()
     {
         collection = GameObject.Find("Collection").GetComponent<Collection>();
         WoodQ.text = collection.quantityWoodChest.ToString();
         SilverQ.text = collection.quantitySilverChest.ToString();
-        GoldQ.text = collection.quantityGoldChest.ToString();
-    }
+        GolQ.text = collection.quantityGoldChest.ToString();
+    }*/
 }

@@ -13,8 +13,8 @@ public class archiveItems : MonoBehaviour
 
     void Start()
     {
-       
-       
+
+
     }
 
     void Awake()
@@ -25,14 +25,15 @@ public class archiveItems : MonoBehaviour
 
     private void FillArchive()
     {
+   
         archive = new List<Archive>();
+
         weapon[] listweapon = Resources.LoadAll<weapon>("");
         for (int i = 0; i <= listweapon.Length-1; i++)
         {
             ar1 = new Archive();
             ar1.weapon = listweapon[i];
             ar1.opened = false;
-         //   if (i % 2 == 0) ar1.opened = true;
             archive.Add(ar1);
         }
     }
@@ -41,7 +42,6 @@ public class archiveItems : MonoBehaviour
     {
         archive[i].opened = true;
     }
-
 
     private void FillVisualArchive()
     {

@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class resetLevel : MonoBehaviour
 {
-
+/*
     public GameObject SelectChestUI, ResultChestUI;
     public  void BackToSelectChests()
     {
         ResultChestUI.SetActive(false);
         SelectChestUI.SetActive(true);
         GameObject.Find("ImageItem").SetActive(false);
-    }
+    }*/
 }

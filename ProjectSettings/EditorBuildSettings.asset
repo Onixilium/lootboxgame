@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Gatch2.unity
+    path: Assets/Scenes/OpenChests.unity
     guid: 2b0c083b0a070624a976be37cf69f14b
   - enabled: 1
     path: Assets/Scenes/collection.unity

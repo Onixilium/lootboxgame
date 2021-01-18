@@ -4,19 +4,19 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    public void LoadHomeScreen()
+    public void LoadSceneHomeScreen()
     {
         SceneManager.LoadScene("HomeScreen");
     }
 
-    public void LoadCollection()
+    public void LoadSceneCollection()
     {
         SceneManager.LoadScene("collection");
     }
 
-    public void LoadGatch2()
+    public void LoadSceneOpenChests()
     {
-        SceneManager.LoadScene("Gatch2");
+        SceneManager.LoadScene("OpenChests");
     }
 
     public GameObject gmFade;
@@ -24,52 +24,17 @@ public class Menu : MonoBehaviour
     {
         gmFade.SetActive(true);
     }
-    public void LoadArciveItems()
+    public void LoadSceneArciveItems()
     {
         SceneManager.LoadScene("archiveItems");
     }
 
-    public static void OpenRunnerGame()
+    public static void LoadSceneRunnerGame()
     {
         SceneManager.LoadScene("runner");
     }
     public void EndGame()
     {
-        SceneManager.LoadScene("Gatch2");
+        LoadSceneOpenChests();
     }
-
-    public GameObject OpenChestUI, SelectChestUI;
-    public GameObject imgChest;
-    public void OpenWood()
-    {
-        ToogleUIChest();
-        imgChest.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/Chest_02_02")[0];
-    }
-    public void OpenSilver()
-    {
-        ToogleUIChest();
-        imgChest.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[1];
-    }
-
-    public void OpenGold()
-    {
-        ToogleUIChest();
-        imgChest.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[2];
-    }
-
-    void ToogleUIChest()
-    {
-        if (SelectChestUI.active)
-        {
-            SelectChestUI.SetActive(false);
-            OpenChestUI.SetActive(true);            
-        }
-        else
-        {
-            OpenChestUI.SetActive(false);
-            SelectChestUI.SetActive(true);            
-        }
-    }
-
-
 }

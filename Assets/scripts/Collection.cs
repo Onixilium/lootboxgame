@@ -9,34 +9,32 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class Collection : MonoBehaviour
 {
     public List<weapon> listweap;
+    public List<Archive> archive;
+
     public int tickets;
     public int quantityWoodChest, quantitySilverChest, quantityGoldChest;
-
     public PlayerStatistics localPlayerData = new PlayerStatistics();
-
     public static Collection Instance;
     public Collection LocalCopyOfData;
-       
-
+    SetUiText setUiText;
     public Text ticketsText;
-
     public weapon[] weapon;
+    
+
     void Start()
     {
         localPlayerData = GlobalControl.Instance.savedPlayerData;
 
         weapon = Resources.LoadAll<weapon>("");
-        ticketsText = GameObject.Find("TextTickets1").GetComponent<Text>();
-        ticketsText.text = tickets.ToString();
+
+        setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
+        setUiText.SetBronzeKeyText(tickets);
     }
 
 
-    private void OnLevelWasLoaded(int level)
+    private void OnLevelWasLoaded()
     {
-     if(GameObject.Find("TextTickets1") == null) { 
-        ticketsText = GameObject.Find("TextTickets1").GetComponent<Text>();
-        ticketsText.text = tickets.ToString(); 
-        }
+        setUiText.SetBronzeKeyText(tickets);
     }
 
     static bool created = false;
@@ -66,7 +64,9 @@ public class Collection : MonoBehaviour
         GlobalControl.Instance.LoadData();
         LoadFromString(GlobalControl.Instance.LocalCopyOfData.JsonString);
 
-        ticketsText.text = tickets.ToString();
+        setUiText.SetBronzeKeyText(tickets);
+
+        GameObject.Find("Archive").GetComponent<archiveItems>().archive = this.archive;
     }
 
     //удобно

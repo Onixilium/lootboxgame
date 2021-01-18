@@ -346,7 +346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155.29999, y: 82}
+  m_AnchoredPosition: {x: 351, y: 102}
   m_SizeDelta: {x: 180.2, y: 83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &99154305
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 176950077}
   - component: {fileID: 176950076}
   m_Layer: 5
-  m_Name: WoodChest
+  m_Name: BronzeChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -553,7 +553,7 @@ RectTransform:
   - {fileID: 255154258}
   - {fileID: 1266455896}
   m_Father: {fileID: 627837962}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -603,9 +603,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1903451924}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OpenGold
+      - m_Target: {fileID: 987759356}
+        m_TargetAssemblyTypeName: OpenChestUI, Assembly-CSharp
+        m_MethodName: SelectBronze
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -652,51 +652,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176950074}
   m_CullTransparentMesh: 0
---- !u!1 &228480786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 228480788}
-  - component: {fileID: 228480787}
-  m_Layer: 0
-  m_Name: reset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &228480787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228480786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331b7301b4d19e5448930d4d71cbbe14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SelectChestUI: {fileID: 627837961}
-  ResultChestUI: {fileID: 1807587636}
---- !u!4 &228480788
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 228480786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 647149852}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251775919
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +810,7 @@ GameObject:
   - component: {fileID: 446763039}
   - component: {fileID: 446763038}
   m_Layer: 5
-  m_Name: 3
+  m_Name: goldKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -999,9 +954,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: MainPage
+      - m_Target: {fileID: 1903451924}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: LoadSceneHomeScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1269,9 +1224,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 228480787}
-        m_TargetAssemblyTypeName: resetLevel, Assembly-CSharp
-        m_MethodName: BackToSelectChests
+      - m_Target: {fileID: 987759356}
+        m_TargetAssemblyTypeName: OpenChestUI, Assembly-CSharp
+        m_MethodName: DefaultViews
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1345,9 +1300,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.34364027, y: 0.34364027, z: 0.34364027}
   m_Children:
+  - {fileID: 176950075}
   - {fileID: 1083084326}
   - {fileID: 1558145088}
-  - {fileID: 176950075}
   m_Father: {fileID: 786823575}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1356,39 +1311,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 16}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &647149851
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 647149852}
-  m_Layer: 0
-  m_Name: ManagerScripts
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &647149852
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647149851}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 238.62424, y: 192.30005, z: -41.625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1395862347}
-  - {fileID: 228480788}
-  - {fileID: 987759355}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649853103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,9 +1392,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: OpenChest
+      - m_Target: {fileID: 1903451924}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: LoadSceneOpenChests
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1531,7 +1453,7 @@ GameObject:
   - component: {fileID: 677368517}
   - component: {fileID: 677368516}
   m_Layer: 5
-  m_Name: TextTickets3
+  m_Name: goldKeyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2100,7 +2022,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 987759356}
-        m_TargetAssemblyTypeName: ManageOpenScene, Assembly-CSharp
+        m_TargetAssemblyTypeName: OpenChestUI, Assembly-CSharp
         m_MethodName: OpenChest
         m_Mode: 1
         m_Arguments:
@@ -2158,8 +2080,9 @@ GameObject:
   m_Component:
   - component: {fileID: 987759355}
   - component: {fileID: 987759356}
+  - component: {fileID: 987759357}
   m_Layer: 0
-  m_Name: ManageOpenScene
+  m_Name: SceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2172,11 +2095,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987759354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 238.62424, y: 192.30005, z: -41.625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 647149852}
+  m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &987759356
@@ -2188,13 +2111,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 987759354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f475891a466a0458487ad8027d1b8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 831666672d5666b459a320243dadddd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WoodQ: {fileID: 1266455897}
-  SilverQ: {fileID: 1108876483}
-  GoldQ: {fileID: 1779924465}
-  getRndWeapon: {fileID: 1929796734}
+  OpenChestUI_gm: {fileID: 1960561738}
+  SelectChestUI_gm: {fileID: 627837961}
+  imgChest_gm: {fileID: 523520732}
+  ResultChestUI_gm: {fileID: 1807587636}
+--- !u!114 &987759357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987759354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412f44cb814194247a2c5be036d02e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053368471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2213,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1903451924}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OpenRunnerGame
+        m_MethodName: LoadSceneRunnerGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2338,7 +2273,7 @@ GameObject:
   - component: {fileID: 1083084328}
   - component: {fileID: 1083084327}
   m_Layer: 5
-  m_Name: silverChest
+  m_Name: SilverChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2359,7 +2294,7 @@ RectTransform:
   - {fileID: 830998969}
   - {fileID: 1108876482}
   m_Father: {fileID: 627837962}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -2409,9 +2344,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1903451924}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OpenSilver
+      - m_Target: {fileID: 987759356}
+        m_TargetAssemblyTypeName: OpenChestUI, Assembly-CSharp
+        m_MethodName: SelectSilver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3041,55 +2976,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320277824}
   m_CullTransparentMesh: 0
---- !u!1 &1395862345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1395862347}
-  - component: {fileID: 1395862346}
-  m_Layer: 0
-  m_Name: getRndWeapon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1395862346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395862345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e26b542ad3cecf42b680a03d70e2600, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponDisplay: {fileID: 0}
-  card: {fileID: 0}
-  col: {fileID: 0}
-  OpenChestUI: {fileID: 1960561738}
-  ResultChestUI: {fileID: 1807587636}
-  ticketsText: {fileID: 0}
---- !u!4 &1395862347
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395862345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 647149852}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1441280836
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,7 +3012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252, y: 82}
+  m_AnchoredPosition: {x: 349.69998, y: 142}
   m_SizeDelta: {x: 180.2, y: 83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441280838
@@ -3378,7 +3264,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1903451924}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: LoadCollection
+        m_MethodName: LoadSceneCollection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3549,7 +3435,7 @@ GameObject:
   - component: {fileID: 1558145090}
   - component: {fileID: 1558145089}
   m_Layer: 5
-  m_Name: goldChest
+  m_Name: GoldChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3570,7 +3456,7 @@ RectTransform:
   - {fileID: 1591891263}
   - {fileID: 1779924464}
   m_Father: {fileID: 627837962}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -3620,9 +3506,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1903451924}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OpenGold
+      - m_Target: {fileID: 987759356}
+        m_TargetAssemblyTypeName: OpenChestUI, Assembly-CSharp
+        m_MethodName: SelectGold
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3834,7 +3720,7 @@ GameObject:
   - component: {fileID: 1658102106}
   - component: {fileID: 1658102105}
   m_Layer: 5
-  m_Name: TextTickets1
+  m_Name: bronzeKeyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4216,9 +4102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gmFade: {fileID: 83242407}
-  OpenChestUI: {fileID: 1960561738}
-  SelectChestUI: {fileID: 627837961}
-  imgChest: {fileID: 523520732}
 --- !u!1 &1905448797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,7 +4114,7 @@ GameObject:
   - component: {fileID: 1905448800}
   - component: {fileID: 1905448799}
   m_Layer: 5
-  m_Name: TextTickets2
+  m_Name: silverKeyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4408,10 +4291,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponDisplay: {fileID: 1212232576}
   card: {fileID: 1212232574}
-  col: {fileID: 251775921}
+  collection: {fileID: 0}
   OpenChestUI: {fileID: 1960561738}
   ResultChestUI: {fileID: 1807587636}
-  ticketsText: {fileID: 1658102105}
 --- !u!82 &1929796740
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4710,7 +4592,7 @@ GameObject:
   - component: {fileID: 2010355560}
   - component: {fileID: 2010355559}
   m_Layer: 5
-  m_Name: 1
+  m_Name: bronzeKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4843,7 +4725,7 @@ GameObject:
   - component: {fileID: 2109854970}
   - component: {fileID: 2109854969}
   m_Layer: 5
-  m_Name: 2
+  m_Name: silverKey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

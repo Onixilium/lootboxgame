@@ -7,11 +7,14 @@ public class GetRndWeapon : MonoBehaviour
 
     public WeaponDisplay weaponDisplay;
     public GameObject card;
-    public Collection col;
-
-
+    public Collection collection;
 
     public GameObject OpenChestUI, ResultChestUI;
+
+    public void Start()
+    {
+        collection = GameObject.Find("Collection").GetComponent<Collection>();
+    } 
 
    public  void glowbgAnimation()
     {
@@ -34,28 +37,26 @@ public class GetRndWeapon : MonoBehaviour
         if (dice >= 0) { itemIndex = Random.Range(0, 50); }
         if (dice >= 50) { itemIndex = Random.Range(51,60); }
         if (dice >= 90) { itemIndex = Random.Range(61, 65); }
-        w = col.weapon[itemIndex];
+        w = collection.weapon[itemIndex];
             
         weaponDisplay.weapon = w;
         weaponDisplay.nameText.text = w.name;
         weaponDisplay.attackText.text = w.attack.ToString();
         weaponDisplay.art.sprite = w.art;
 
-        col = GameObject.Find("Collection").GetComponent<Collection>();
-        col.listweap.Add(w);
+        collection.listweap.Add(w);
 
         archiveItems a = GameObject.Find("Archive").GetComponent<archiveItems>(); ;
         a.ChangeStateItem(itemIndex);
     }
-    public Text ticketsText;
-    public void AddToMemory()
+
+    SetUiText setUiText;
+    public  void AddToMemory()
     {
-        GameObject.Find("Collection").GetComponent<Collection>().tickets--;
+        collection.tickets--;
 
-        ticketsText = GameObject.Find("TextTickets1").GetComponent<Text>();
-        ticketsText.text = GameObject.Find("Collection").GetComponent<Collection>().tickets.ToString();
-
-
+        setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
+        setUiText.SetBronzeKeyText(collection.tickets);
     }
 
     private void Wood()

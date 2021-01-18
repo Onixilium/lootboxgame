@@ -23,7 +23,6 @@ public class TransitionHandler : MonoBehaviour
 
         public void LoadSceneAfterFade()
     {
-
-        Menu.OpenRunnerGame();// SceneManager.LoadScene("runner");
+        Menu.LoadSceneRunnerGame();// SceneManager.LoadScene("runner");
     }
 }
