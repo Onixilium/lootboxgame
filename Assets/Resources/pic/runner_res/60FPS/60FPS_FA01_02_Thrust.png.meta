@@ -1,0 +1,1870 @@
+fileFormatVersion: 2
+guid: 06203b53c34340544a2042f14ad0d08c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3208975879462957766
+    second: 60FPS_FA01_02_Thrust_0
+  - first:
+      213: 5423811838477982665
+    second: 60FPS_FA01_02_Thrust_1
+  - first:
+      213: 9123101709964213223
+    second: 60FPS_FA01_02_Thrust_2
+  - first:
+      213: 2410438494313532846
+    second: 60FPS_FA01_02_Thrust_3
+  - first:
+      213: 8562044240148873337
+    second: 60FPS_FA01_02_Thrust_4
+  - first:
+      213: 4118287571912881375
+    second: 60FPS_FA01_02_Thrust_5
+  - first:
+      213: 1412924790582127156
+    second: 60FPS_FA01_02_Thrust_6
+  - first:
+      213: 6943085055258618589
+    second: 60FPS_FA01_02_Thrust_7
+  - first:
+      213: -8488655784228493515
+    second: 60FPS_FA01_02_Thrust_8
+  - first:
+      213: 3294621120932188996
+    second: 60FPS_FA01_02_Thrust_9
+  - first:
+      213: 7285197349262167249
+    second: 60FPS_FA01_02_Thrust_10
+  - first:
+      213: 1478332627630361838
+    second: 60FPS_FA01_02_Thrust_11
+  - first:
+      213: -5350184937384246879
+    second: 60FPS_FA01_02_Thrust_12
+  - first:
+      213: 5965012663623578173
+    second: 60FPS_FA01_02_Thrust_13
+  - first:
+      213: -439303467861591436
+    second: 60FPS_FA01_02_Thrust_14
+  - first:
+      213: 1523015909389023520
+    second: 60FPS_FA01_02_Thrust_15
+  - first:
+      213: -5141997067331211706
+    second: 60FPS_FA01_02_Thrust_16
+  - first:
+      213: -6751088126615203451
+    second: 60FPS_FA01_02_Thrust_17
+  - first:
+      213: -257107147269410490
+    second: 60FPS_FA01_02_Thrust_18
+  - first:
+      213: -8788077187801906931
+    second: 60FPS_FA01_02_Thrust_19
+  - first:
+      213: -70817611469854885
+    second: 60FPS_FA01_02_Thrust_20
+  - first:
+      213: 6031104414539420047
+    second: 60FPS_FA01_02_Thrust_21
+  - first:
+      213: 2902625982271258891
+    second: 60FPS_FA01_02_Thrust_22
+  - first:
+      213: 3535461662344562262
+    second: 60FPS_FA01_02_Thrust_23
+  - first:
+      213: -4898930677068932267
+    second: 60FPS_FA01_02_Thrust_24
+  - first:
+      213: -6955271280652277888
+    second: 60FPS_FA01_02_Thrust_25
+  - first:
+      213: 4352036506777134629
+    second: 60FPS_FA01_02_Thrust_26
+  - first:
+      213: -1487718574955736677
+    second: 60FPS_FA01_02_Thrust_27
+  - first:
+      213: -3387797618085713847
+    second: 60FPS_FA01_02_Thrust_28
+  - first:
+      213: -7042372534296192010
+    second: 60FPS_FA01_02_Thrust_29
+  - first:
+      213: -5674978423601537164
+    second: 60FPS_FA01_02_Thrust_30
+  - first:
+      213: 5480345929495015217
+    second: 60FPS_FA01_02_Thrust_31
+  - first:
+      213: -805247886067530350
+    second: 60FPS_FA01_02_Thrust_32
+  - first:
+      213: -1619037845426583283
+    second: 60FPS_FA01_02_Thrust_33
+  - first:
+      213: -5570940302519099067
+    second: 60FPS_FA01_02_Thrust_34
+  - first:
+      213: -5936075202520095255
+    second: 60FPS_FA01_02_Thrust_35
+  - first:
+      213: 6984967357341623421
+    second: 60FPS_FA01_02_Thrust_36
+  - first:
+      213: 3122483165481489878
+    second: 60FPS_FA01_02_Thrust_37
+  - first:
+      213: 7949948599495142348
+    second: 60FPS_FA01_02_Thrust_38
+  - first:
+      213: 2985490178783723487
+    second: 60FPS_FA01_02_Thrust_39
+  - first:
+      213: -8753212668709655560
+    second: 60FPS_FA01_02_Thrust_40
+  - first:
+      213: -4217280932258794546
+    second: 60FPS_FA01_02_Thrust_41
+  - first:
+      213: 3818623314666224670
+    second: 60FPS_FA01_02_Thrust_42
+  - first:
+      213: -5995774854008197560
+    second: 60FPS_FA01_02_Thrust_43
+  - first:
+      213: 1181903812666612617
+    second: 60FPS_FA01_02_Thrust_44
+  - first:
+      213: 5772671474970212581
+    second: 60FPS_FA01_02_Thrust_45
+  - first:
+      213: 6023028664878671607
+    second: 60FPS_FA01_02_Thrust_46
+  - first:
+      213: 643288813033405261
+    second: 60FPS_FA01_02_Thrust_47
+  - first:
+      213: -8677226596080525619
+    second: 60FPS_FA01_02_Thrust_48
+  - first:
+      213: 2813553986708319429
+    second: 60FPS_FA01_02_Thrust_49
+  - first:
+      213: -8981249015290163938
+    second: 60FPS_FA01_02_Thrust_50
+  - first:
+      213: 4897973156206833650
+    second: 60FPS_FA01_02_Thrust_51
+  - first:
+      213: -4262274885320940519
+    second: 60FPS_FA01_02_Thrust_52
+  - first:
+      213: 4948529443564659232
+    second: 60FPS_FA01_02_Thrust_53
+  - first:
+      213: 3961873509782070133
+    second: 60FPS_FA01_02_Thrust_54
+  - first:
+      213: 3515044121780211851
+    second: 60FPS_FA01_02_Thrust_55
+  - first:
+      213: 1423071018087781839
+    second: 60FPS_FA01_02_Thrust_56
+  - first:
+      213: 9196800914999264627
+    second: 60FPS_FA01_02_Thrust_57
+  - first:
+      213: 6966677206398635530
+    second: 60FPS_FA01_02_Thrust_58
+  - first:
+      213: -2676648575826470072
+    second: 60FPS_FA01_02_Thrust_59
+  - first:
+      213: 2817015079493985110
+    second: 60FPS_FA01_02_Thrust_60
+  - first:
+      213: -486748613162492580
+    second: 60FPS_FA01_02_Thrust_61
+  - first:
+      213: 8254947376617647844
+    second: 60FPS_FA01_02_Thrust_62
+  - first:
+      213: -1407667644753795233
+    second: 60FPS_FA01_02_Thrust_63
+  - first:
+      213: -4714277212762951903
+    second: 60FPS_FA01_02_Thrust_64
+  - first:
+      213: -2866537493225113296
+    second: 60FPS_FA01_02_Thrust_65
+  - first:
+      213: -3685917252600725830
+    second: 60FPS_FA01_02_Thrust_66
+  - first:
+      213: -2242773833651946902
+    second: 60FPS_FA01_02_Thrust_67
+  - first:
+      213: 735949210431213210
+    second: 60FPS_FA01_02_Thrust_68
+  - first:
+      213: 4373216244302922216
+    second: 60FPS_FA01_02_Thrust_69
+  - first:
+      213: -8583893983303813575
+    second: 60FPS_FA01_02_Thrust_70
+  - first:
+      213: 3388140786816452208
+    second: 60FPS_FA01_02_Thrust_71
+  - first:
+      213: 8039858265080009813
+    second: 60FPS_FA01_02_Thrust_72
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1028
+        width: 102
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d40d3807d6773d0800000000000000
+      internalID: -3208975879462957766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1031
+        width: 94
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbd9096120454b40800000000000000
+      internalID: 5423811838477982665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1032
+        width: 88
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebfc204ba4cb9e70800000000000000
+      internalID: 9123101709964213223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1008
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead4c7e1a09937120800000000000000
+      internalID: 2410438494313532846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 984
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970c04d6fdd72d670800000000000000
+      internalID: 8562044240148873337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 792
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4f5ce1ab8172930800000000000000
+      internalID: 4118287571912881375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 804
+        width: 118
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aadfc6c97bb9310800000000000000
+      internalID: 1412924790582127156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 824
+        width: 101
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda630c521bca5060800000000000000
+      internalID: 6943085055258618589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_8
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 820
+        width: 106
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537ee700a8c323a80800000000000000
+      internalID: -8488655784228493515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_9
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 814
+        width: 118
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44399ae2478d8bd20800000000000000
+      internalID: 3294621120932188996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 620
+        width: 130
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc8369f3683a1560800000000000000
+      internalID: 7285197349262167249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 617
+        width: 140
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec07c931b7148410800000000000000
+      internalID: 1478332627630361838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_12
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 612
+        width: 149
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1019c552350c5b0800000000000000
+      internalID: -5350184937384246879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_13
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 612
+        width: 155
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d327dffd96bf7c250800000000000000
+      internalID: 5965012663623578173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_14
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 608
+        width: 159
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a3381d2d747e9f0800000000000000
+      internalID: -439303467861591436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 416
+        width: 163
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029b66a76e6d22510800000000000000
+      internalID: 1523015909389023520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 412
+        width: 83
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e6f9529e4f3a8b0800000000000000
+      internalID: -5141997067331211706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 510
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5815ebd1e115f42a0800000000000000
+      internalID: -6751088126615203451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_18
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 484
+        width: 59
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641fac969629e6cf0800000000000000
+      internalID: -257107147269410490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_19
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 412
+        width: 83
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d018a52eb5a7a0680800000000000000
+      internalID: -8788077187801906931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_20
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 506
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b576f70f1c7640ff0800000000000000
+      internalID: -70817611469854885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_21
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 484
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8199e7c289c2b350800000000000000
+      internalID: 6031104414539420047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 412
+        width: 70
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01091db3f2384820800000000000000
+      internalID: 2902625982271258891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_23
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 487
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6564f0576ab701130800000000000000
+      internalID: 3535461662344562262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_24
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 511
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bda0e3180830cb0800000000000000
+      internalID: -4898930677068932267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_25
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 412
+        width: 53
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087ae30fe99e97f90800000000000000
+      internalID: -6955271280652277888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_26
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 504
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526abf3152a856c30800000000000000
+      internalID: 4352036506777134629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 475
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91530e96df8a5be0800000000000000
+      internalID: -1487718574955736677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_28
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 485
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948261304002cf0d0800000000000000
+      internalID: -3387797618085713847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_29
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 484
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbde4dfd77744e90800000000000000
+      internalID: -7042372534296192010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_30
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 489
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f5939e03d6e31b0800000000000000
+      internalID: -5674978423601537164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_31
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 484
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13feec536991e0c40800000000000000
+      internalID: 5480345929495015217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 468
+        width: 83
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2958fc2605f23d4f0800000000000000
+      internalID: -805247886067530350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_33
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 482
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d094f6958a50889e0800000000000000
+      internalID: -1619037845426583283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_34
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 482
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541217b9f4b00b2b0800000000000000
+      internalID: -5570940302519099067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_35
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 461
+        width: 77
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5e8c1dd03de9da0800000000000000
+      internalID: -5936075202520095255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_36
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 457
+        width: 83
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74eb06bdc69fe060800000000000000
+      internalID: 6984967357341623421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_37
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 472
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d559a735e9455b20800000000000000
+      internalID: 3122483165481489878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_38
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 461
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccba58f6124e35e60800000000000000
+      internalID: 7949948599495142348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_39
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 476
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf32d2ff779e6920800000000000000
+      internalID: 2985490178783723487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_40
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 460
+        width: 67
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbac1e4477568680800000000000000
+      internalID: -8753212668709655560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_41
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 468
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3bfa216553975c0800000000000000
+      internalID: -4217280932258794546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_42
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 423
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c74b93ca97ef430800000000000000
+      internalID: 3818623314666224670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_43
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 421
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e2f99898abacca0800000000000000
+      internalID: -5995774854008197560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_44
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 421
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b5ca07147f66010800000000000000
+      internalID: 1181903812666612617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_45
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 420
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e831ae1f16ac1050800000000000000
+      internalID: 5772671474970212581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_46
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 216
+        width: 55
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6a61ac8a8169350800000000000000
+      internalID: 6023028664878671607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_47
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 354
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bb6d464cb6de800800000000000000
+      internalID: 643288813033405261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_48
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 216
+        width: 62
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce5c01826c449780800000000000000
+      internalID: -8677226596080525619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_49
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 357
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc222ea170cb0720800000000000000
+      internalID: 2813553986708319429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_50
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 216
+        width: 72
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d8d44fa913c5380800000000000000
+      internalID: -8981249015290163938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_51
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 216
+        width: 64
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff6b1f82a819f340800000000000000
+      internalID: 4897973156206833650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_52
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 216
+        width: 101
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9146065039b59d4c0800000000000000
+      internalID: -4262274885320940519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_53
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 268
+        width: 80
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022ab3c7f45bca440800000000000000
+      internalID: 4948529443564659232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_54
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 275
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573279b57f66bf630800000000000000
+      internalID: 3961873509782070133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_55
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 298
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80d8885102f7c030800000000000000
+      internalID: 3515044121780211851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_56
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 284
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5964b1d83cfb310800000000000000
+      internalID: 1423071018087781839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_57
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 277
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375c48894b991af70800000000000000
+      internalID: 9196800914999264627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_58
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 281
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e8338120c9ea060800000000000000
+      internalID: 6966677206398635530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_59
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 267
+        width: 71
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bde414d42aadad0800000000000000
+      internalID: -2676648575826470072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_60
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 284
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65368242a4c081720800000000000000
+      internalID: 2817015079493985110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_61
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 277
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d198917b8be39f0800000000000000
+      internalID: -486748613162492580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_62
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 283
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee66d607e67f8270800000000000000
+      internalID: 8254947376617647844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_63
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 267
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57a3a83cb5f67ce0800000000000000
+      internalID: -1407667644753795233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_64
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 283
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fab803ad5839eb0800000000000000
+      internalID: -4714277212762951903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_65
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 266
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0397af466530838d0800000000000000
+      internalID: -2866537493225113296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_66
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 227
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abeff3f99cdf8dcc0800000000000000
+      internalID: -3685917252600725830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_67
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 226
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a72adb41110e0e0800000000000000
+      internalID: -2242773833651946902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_68
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 24
+        width: 102
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e4b7c58ed963a00800000000000000
+      internalID: 735949210431213210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_69
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 24
+        width: 103
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1c4aff009c0bc30800000000000000
+      internalID: 4373216244302922216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_70
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 24
+        width: 28
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936309fc6e1efd880800000000000000
+      internalID: -8583893983303813575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_71
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 24
+        width: 28
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076053f2818150f20800000000000000
+      internalID: 3388140786816452208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 60FPS_FA01_02_Thrust_72
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 24
+        width: 28
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554159ebe70539f60800000000000000
+      internalID: 8039858265080009813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
