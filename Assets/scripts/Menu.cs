@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
@@ -36,5 +35,9 @@ public class Menu : MonoBehaviour
     public void EndGame()
     {
         LoadSceneOpenChests();
+    }
+    public void RestartGame()
+    {
+        Application.LoadLevel(0);
     }
 }

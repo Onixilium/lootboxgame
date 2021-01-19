@@ -5,6 +5,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
+
 public class GlobalControl : MonoBehaviour
 {
     public static GlobalControl Instance;
@@ -45,6 +46,8 @@ public class GlobalControl : MonoBehaviour
 
     public void LoadData()
     {
+        if (System.IO.File.Exists(filePath))
+        {
         BinaryFormatter formatter = new BinaryFormatter();
 
         FileStream saveFile = File.Open(filePath, FileMode.Open);
@@ -52,5 +55,12 @@ public class GlobalControl : MonoBehaviour
         LocalCopyOfData = (PlayerStatistics)formatter.Deserialize(saveFile);
 
         saveFile.Close();
+        }
+    }
+
+    public void ClearData()
+    {        
+       File.Delete(filePath); Application.Quit();
+        //GameObject.Find("MENU").GetComponent<Menu>().RestartGame();
     }
 }
