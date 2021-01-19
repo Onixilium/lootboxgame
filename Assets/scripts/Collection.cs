@@ -4,23 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.IO;
+using UnityEngine.SceneManagement;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public class Collection : MonoBehaviour
 {
     public List<weapon> listweap;
-    public List<Archive> archive;
+
 
     public int tickets;
     public int quantityWoodChest, quantitySilverChest, quantityGoldChest;
     public PlayerStatistics localPlayerData = new PlayerStatistics();
     public static Collection Instance;
     public Collection LocalCopyOfData;
-    SetUiText setUiText;
+    
     public Text ticketsText;
     public weapon[] weapon;
-    
 
+    SetUiText setUiText;
     void Start()
     {
         localPlayerData = GlobalControl.Instance.savedPlayerData;
@@ -29,10 +30,17 @@ public class Collection : MonoBehaviour
 
         setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
         setUiText.SetBronzeKeyText(tickets);
+
+      
+
     }
 
+    void Update()
+    {
+  
+    }
 
-    private void OnLevelWasLoaded()
+    private void OnLevelWasLoaded(int level)
     {
         setUiText.SetBronzeKeyText(tickets);
     }
@@ -65,8 +73,6 @@ public class Collection : MonoBehaviour
         LoadFromString(GlobalControl.Instance.LocalCopyOfData.JsonString);
 
         setUiText.SetBronzeKeyText(tickets);
-
-        GameObject.Find("Archive").GetComponent<archiveItems>().archive = this.archive;
     }
 
     //удобно
@@ -79,5 +85,9 @@ public class Collection : MonoBehaviour
     {
         JsonUtility.FromJsonOverwrite(savedData, this);
     }
+
+
+
+   
 
 }

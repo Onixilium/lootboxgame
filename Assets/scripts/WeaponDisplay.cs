@@ -10,6 +10,7 @@ public class WeaponDisplay : MonoBehaviour
     public Text nameText;
     public Text attackText;
     public Text rarity;
+    public Text description;
 
     public Image art;
 

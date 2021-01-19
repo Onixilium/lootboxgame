@@ -8,16 +8,14 @@ using System;
 public class weapon : ScriptableObject
 {
     public new string name;
-    public string description;
-
+    public new string description;
     public Sprite art;
-
+    public bool Opened;
     public int attack, id;
 
     public void Print()
     {
         Debug.Log(name + ": " + description + " The weapon has attack " + attack);
-
     }
 
 }

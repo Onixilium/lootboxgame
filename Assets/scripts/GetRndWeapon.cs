@@ -11,9 +11,13 @@ public class GetRndWeapon : MonoBehaviour
 
     public GameObject OpenChestUI, ResultChestUI;
 
+    SetUiText setUiText;
+
+
     public void Start()
     {
         collection = GameObject.Find("Collection").GetComponent<Collection>();
+        setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
     } 
 
    public  void glowbgAnimation()
@@ -38,24 +42,24 @@ public class GetRndWeapon : MonoBehaviour
         if (dice >= 50) { itemIndex = Random.Range(51,60); }
         if (dice >= 90) { itemIndex = Random.Range(61, 65); }
         w = collection.weapon[itemIndex];
-            
+        
+        
         weaponDisplay.weapon = w;
         weaponDisplay.nameText.text = w.name;
         weaponDisplay.attackText.text = w.attack.ToString();
         weaponDisplay.art.sprite = w.art;
 
+
         collection.listweap.Add(w);
 
-        archiveItems a = GameObject.Find("Archive").GetComponent<archiveItems>(); ;
-        a.ChangeStateItem(itemIndex);
+        w.Opened = true;
     }
 
-    SetUiText setUiText;
+ 
     public  void AddToMemory()
     {
         collection.tickets--;
-
-        setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
+        
         setUiText.SetBronzeKeyText(collection.tickets);
     }
 
