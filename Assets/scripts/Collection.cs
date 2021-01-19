@@ -61,9 +61,7 @@ public class Collection : MonoBehaviour
     public string JsonString = "";
     public void SavePlayer()
     {
-        JsonString = SaveToString();
-
-        localPlayerData.JsonString = JsonString; 
+        localPlayerData.JsonString = SaveToString(); 
         GlobalControl.Instance.SaveData(); 
     }
 

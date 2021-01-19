@@ -38,7 +38,7 @@ public class GlobalControl : MonoBehaviour
        
         FileStream saveFile = File.Create(filePath);
 
-        LocalCopyOfData =GameObject.Find("Collection").GetComponent<Collection>().localPlayerData;
+        LocalCopyOfData = GameObject.Find("Collection").GetComponent<Collection>().localPlayerData;
         formatter.Serialize(saveFile, LocalCopyOfData);
         saveFile.Close();
     }

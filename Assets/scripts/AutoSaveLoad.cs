@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class AutoSaveLoad : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Collection collection;
+
     void Start()
     {
-        
+        collection = GameObject.Find("Collection").GetComponent<Collection>();
+        collection.LoadData();
     }
 
-
+    
 }
