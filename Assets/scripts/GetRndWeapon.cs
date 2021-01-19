@@ -58,9 +58,9 @@ public class GetRndWeapon : MonoBehaviour
  
     public  void AddToMemory()
     {
-        collection.tickets--;
-        
+        collection.tickets--;        
         setUiText.SetBronzeKeyText(collection.tickets);
+        collection.SavePlayer();
     }
 
     private void Wood()
