@@ -61,6 +61,11 @@ public class GlobalControl : MonoBehaviour
     public void ClearData()
     {        
        File.Delete(filePath); Application.Quit();
+        var col = GameObject.Find("Collection").GetComponent<Collection>();
+        for(int i = 0; i <= 64; i++)
+        {
+            col.weapon[i].Opened = false;
+        }
         //GameObject.Find("MENU").GetComponent<Menu>().RestartGame();
     }
 }

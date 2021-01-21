@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: sword7
   m_EditorClassIdentifier: 
   name: Sword 2
-  description: epic
+  description: 
+  rarity: rare
   art: {fileID: 21300000, guid: 54b5e6fd7fd31ca4abe6b7bcdc0b7278, type: 3}
   Opened: 0
   attack: 10

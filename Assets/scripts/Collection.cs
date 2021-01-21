@@ -9,7 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class Collection : MonoBehaviour
 {
-    public List<weapon> listweap;
+   // public List<weapon> listweap;
 
 
     public int tickets;
@@ -58,6 +58,7 @@ public class Collection : MonoBehaviour
     public string JsonString = "";
     public void SavePlayer()
     {
+        localPlayerData.JsonString = ""; //else json string will be adding
         localPlayerData.JsonString = SaveToString(); 
         GlobalControl.Instance.SaveData(); 
     }

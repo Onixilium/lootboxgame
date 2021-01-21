@@ -9,7 +9,7 @@ public class LoadInentory : MonoBehaviour
     
    void Start()
     {
-        Collection collection = GameObject.Find("Collection").GetComponent<Collection>();
+       /* Collection collection = GameObject.Find("Collection").GetComponent<Collection>();
        int quantutyItems = collection.listweap.Count;
         if (quantutyItems > 0)
         {
@@ -21,6 +21,6 @@ public class LoadInentory : MonoBehaviour
                 Button newButton = (Button)Instantiate(buttonPrefab);
                 newButton.transform.SetParent(inventory.transform, false);
             } 
-        }        
+        }    */    
     }
 }

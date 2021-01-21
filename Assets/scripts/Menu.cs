@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
 
     public void LoadSceneCollection()
     {
-        SceneManager.LoadScene("collection");
+        SceneManager.LoadScene("archiveItems");
     }
 
     public void LoadSceneOpenChests()

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: bow31
   m_EditorClassIdentifier: 
   name: Bow 6
-  description: common
+  description: 
+  rarity: rare
   art: {fileID: 21300000, guid: 391c9a6f6a0cbad4da210a138e5800e0, type: 3}
   Opened: 0
   attack: 10

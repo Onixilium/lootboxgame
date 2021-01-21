@@ -56,9 +56,13 @@ public class GetRndWeapon : MonoBehaviour
         weaponDisplay.nameText.text = w.name;
         weaponDisplay.attackText.text = w.attack.ToString();
         weaponDisplay.art.sprite = w.art;
+       
+        if (w.rarity == "common") weaponDisplay.rarityText.color = new Color(255, 255, 255);
+        if (w.rarity == "rare") weaponDisplay.rarityText.color = new Color(255, 135, 0);
+        if (w.rarity == "epic") weaponDisplay.rarityText.color = new Color(239, 0, 169);
+        weaponDisplay.rarityText.text = w.rarity;
 
-
-        collection.listweap.Add(w);
+       //collection.listweap.Add(w);
 
         w.Opened = true;
     }
@@ -77,19 +81,19 @@ public class GetRndWeapon : MonoBehaviour
 
     private List<weapon> BronzeChest()
     {
-        for (int i = 0; i <=64; i++)
+        for (int i = 0; i <= 64; i++)
         {
-              if (collection.weapon[i].description == "common")
-                  listBronze.Add(collection.weapon[i]);
+            if (collection.weapon[i].rarity == "common")
+                listBronze.Add(collection.weapon[i]);
         }
-       return listBronze;
+        return listBronze;
     }
 
     private List<weapon> SilverChest()
     {
         for (int i = 0; i <= 64; i++)
         {
-            if (collection.weapon[i].description == "rare")
+            if (collection.weapon[i].rarity == "rare")
                 listSilver.Add(collection.weapon[i]);
         }
       return listSilver;
@@ -99,7 +103,7 @@ public class GetRndWeapon : MonoBehaviour
     {
         for (int i = 0; i <= 64; i++)
         {
-            if (collection.weapon[i].description == "epic")
+            if (collection.weapon[i].rarity == "epic")
                 listGold.Add(collection.weapon[i]);
         }
       return listGold;

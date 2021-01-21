@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: sword3
   m_EditorClassIdentifier: 
   name: Sword 3
-  description: rare
+  description: 
+  rarity: rare
   art: {fileID: 21300000, guid: ddee1eb3aecf4f44f942858454c564fe, type: 3}
   Opened: 0
   attack: 10

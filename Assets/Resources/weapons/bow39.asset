@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: bow39
   m_EditorClassIdentifier: 
   name: Bow 9
-  description: rare
+  description: 
+  rarity: rare
   art: {fileID: 21300000, guid: b5963c21ca2f1f74989836a4b757529d, type: 3}
-  Opened: 0
+  Opened: 1
   attack: 10
   id: 39
