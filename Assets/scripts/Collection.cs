@@ -30,9 +30,6 @@ public class Collection : MonoBehaviour
 
         setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
         setUiText.SetBronzeKeyText(tickets);
-
-      
-
     }
 
     void Update()
@@ -86,6 +83,5 @@ public class Collection : MonoBehaviour
 
 
 
-   
 
 }

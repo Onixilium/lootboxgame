@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36258456, g: 0.7480484, b: 0.7924528, a: 1}
+  m_Color: {r: 0.34603062, g: 0.9056604, b: 0.8652143, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_OnCullStateChanged:
@@ -4308,6 +4308,9 @@ MonoBehaviour:
   collection: {fileID: 0}
   OpenChestUI: {fileID: 1960561738}
   ResultChestUI: {fileID: 1807587636}
+  listBronze: []
+  listSilver: []
+  listGold: []
 --- !u!82 &1929796740
 AudioSource:
   m_ObjectHideFlags: 0

@@ -15,5 +15,6 @@ MonoBehaviour:
   name: Bow 10
   description: rare
   art: {fileID: 21300000, guid: c3929a80bce742647ae188adc43b5752, type: 3}
+  Opened: 0
   attack: 10
   id: 40

@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using  System;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class GetRndWeapon : MonoBehaviour
 {
@@ -18,9 +22,11 @@ public class GetRndWeapon : MonoBehaviour
     {
         collection = GameObject.Find("Collection").GetComponent<Collection>();
         setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
-    } 
+    }
 
-   public  void glowbgAnimation()
+
+
+    public void glowbgAnimation()
     {
         OpenChestUI.SetActive(false);
         ResultChestUI.SetActive(true);
@@ -35,20 +41,18 @@ public class GetRndWeapon : MonoBehaviour
     int itemIndex;
     private void SetResourcesImage()
     {
-        Random.seed = System.DateTime.Now.Millisecond;
-        var dice = Random.Range(0, 100);      
+        UnityEngine.Random.seed = System.DateTime.Now.Millisecond;
+        var dice = UnityEngine.Random.Range(0, 100);
+       // dice = 95;
+        Debug.Log(dice);
+        if (dice >= 0 && dice<=50)  { w = BronzeChest()[UnityEngine.Random.Range(0, BronzeChest().Count - 1)];  }
+        if (dice >= 51 && dice<=90) { w = SilverChest()[UnityEngine.Random.Range(0, SilverChest().Count - 1)]; }
+        if (dice >= 91 && dice<=100 ) { w = GoldChest()[UnityEngine.Random.Range(0, GoldChest().Count - 1)]; }
 
-        if (dice >= 0) { itemIndex = Random.Range(0, 50); }
-        if (dice >= 50) { itemIndex = Random.Range(51,60); }
-        if (dice >= 90) { itemIndex = Random.Range(61, 65); }
-        w = collection.weapon[itemIndex];
-        
-        
         weaponDisplay.weapon = w;
         weaponDisplay.nameText.text = w.name;
         weaponDisplay.attackText.text = w.attack.ToString();
         weaponDisplay.art.sprite = w.art;
-
 
         collection.listweap.Add(w);
 
@@ -63,16 +67,37 @@ public class GetRndWeapon : MonoBehaviour
         collection.SavePlayer();
     }
 
-    private void Wood()
-    {
+    public List<weapon> listBronze;
+    public List<weapon> listSilver;
+    public List<weapon> listGold;
 
+    private List<weapon> BronzeChest()
+    {
+        for (int i = 0; i <=64; i++)
+        {
+              if (collection.weapon[i].description == "common")
+                  listBronze.Add(collection.weapon[i]);
+        }
+       return listBronze;
     }
-    private void Silver()
-    {
 
+    private List<weapon> SilverChest()
+    {
+        for (int i = 0; i <= 64; i++)
+        {
+            if (collection.weapon[i].description == "rare")
+                listSilver.Add(collection.weapon[i]);
+        }
+      return listSilver;
     }
-    private void Gold()
-    {
 
+    private List<weapon> GoldChest()
+    {
+        for (int i = 0; i <= 64; i++)
+        {
+            if (collection.weapon[i].description == "epic")
+                listGold.Add(collection.weapon[i]);
+        }
+      return listGold;
     }
 }

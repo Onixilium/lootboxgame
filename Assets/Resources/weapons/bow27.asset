@@ -15,5 +15,6 @@ MonoBehaviour:
   name: Bow 7
   description: common
   art: {fileID: 21300000, guid: a7d839b28cb37e64088c61a9d4b28d1f, type: 3}
+  Opened: 0
   attack: 10
   id: 27
