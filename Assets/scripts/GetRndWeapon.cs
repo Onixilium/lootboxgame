@@ -17,11 +17,15 @@ public class GetRndWeapon : MonoBehaviour
 
     SetUiText setUiText;
 
+    OpenChestUI SceneManager;
+
 
     public void Start()
     {
         collection = GameObject.Find("Collection").GetComponent<Collection>();
         setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
+
+        SceneManager = GameObject.Find("SceneManager").GetComponent<OpenChestUI>();
     }
 
 
@@ -43,16 +47,16 @@ public class GetRndWeapon : MonoBehaviour
     {
         UnityEngine.Random.seed = System.DateTime.Now.Millisecond;
         var dice = UnityEngine.Random.Range(0, 100);
-       // dice = 95;
-        Debug.Log(dice);
-        if (dice >= 0 && dice<=50)  { w = BronzeChest()[UnityEngine.Random.Range(0, BronzeChest().Count - 1)];  }
-        if (dice >= 51 && dice<=90) { w = SilverChest()[UnityEngine.Random.Range(0, SilverChest().Count - 1)]; }
-        if (dice >= 91 && dice<=100 ) { w = GoldChest()[UnityEngine.Random.Range(0, GoldChest().Count - 1)]; }
+
+        if (SceneManager.BronzeChest)  { w = BronzeChest()[UnityEngine.Random.Range(0, BronzeChest().Count - 1)]; SceneManager.BronzeChest = false; }
+        if (SceneManager.SilverChest) { w = SilverChest()[UnityEngine.Random.Range(0, SilverChest().Count - 1)]; SceneManager.SilverChest = false; }
+        if (SceneManager.GoldChest) { w = GoldChest()[UnityEngine.Random.Range(0, GoldChest().Count - 1)]; SceneManager.GoldChest = false; }
 
         weaponDisplay.weapon = w;
         weaponDisplay.nameText.text = w.name;
         weaponDisplay.attackText.text = w.attack.ToString();
         weaponDisplay.art.sprite = w.art;
+
 
         collection.listweap.Add(w);
 

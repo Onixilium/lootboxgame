@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class OpenChestUI : MonoBehaviour
 {
     public GameObject OpenChestUI_gm, SelectChestUI_gm, imgChest_gm, ResultChestUI_gm;
-     Collection collection;
+    Collection collection;
+    public bool BronzeChest = false, SilverChest = false, GoldChest = false;
 
     public void Start()
     {
@@ -17,16 +18,19 @@ public class OpenChestUI : MonoBehaviour
     {
         ToogleUIChest();
         imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/Chest_02_02")[0];
+        BronzeChest = true;
     }
     public void SelectSilver()
     {
         ToogleUIChest();
         imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[1];
+        SilverChest = true;
     }
     public void SelectGold()
     {
         ToogleUIChest();
         imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[2];
+        GoldChest = true;
     }
 
     void ToogleUIChest()
