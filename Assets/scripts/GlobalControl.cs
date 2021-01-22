@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-
+using UnityEditor;
 
 public class GlobalControl : MonoBehaviour
 {
@@ -65,6 +65,7 @@ public class GlobalControl : MonoBehaviour
         for(int i = 0; i <= 64; i++)
         {
             col.weapon[i].Opened = false;
+            EditorUtility.SetDirty(col.weapon[i]);
         }
         //GameObject.Find("MENU").GetComponent<Menu>().RestartGame();
     }

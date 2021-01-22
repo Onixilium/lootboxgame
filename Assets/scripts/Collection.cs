@@ -44,6 +44,10 @@ public class Collection : MonoBehaviour
             setUiText = GameObject.Find("MENU").GetComponent<SetUiText>();
             setUiText.SetBronzeKeyText(tickets);//and later will be add other keys
         }
+        if(GameObject.Find("clear") != null)
+        {
+            GameObject.Find("clear").GetComponent<Button>().onClick.AddListener(GlobalControl.Instance.ClearData); //GlobalControl.Instance.ClearData(
+        }
     }
 
     static bool created = false;
