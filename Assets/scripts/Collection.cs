@@ -39,7 +39,11 @@ public class Collection : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        setUiText.SetBronzeKeyText(tickets);
+        if (GameObject.Find("MENU")  != null)
+        {
+            setUiText = GameObject.Find("MENU").GetComponent<SetUiText>();
+            setUiText.SetBronzeKeyText(tickets);//and later will be add other keys
+        }
     }
 
     static bool created = false;
