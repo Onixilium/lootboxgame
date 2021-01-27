@@ -4,7 +4,12 @@ using System.Collections.Generic;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using UnityEditor;
+
+using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using UnityEditor.SceneManagement;
+using UnityEditor; 
+#endif
 
 public class GlobalControl : MonoBehaviour
 {
@@ -65,7 +70,8 @@ public class GlobalControl : MonoBehaviour
         for(int i = 0; i <= 64; i++)
         {
             col.weapon[i].Opened = false;
-            EditorUtility.SetDirty(col.weapon[i]);
+            //EditorUtility.SetDirty(col.weapon[i]);
+           // EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
         }
         //GameObject.Find("MENU").GetComponent<Menu>().RestartGame();
     }

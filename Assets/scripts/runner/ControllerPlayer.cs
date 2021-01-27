@@ -17,19 +17,20 @@ public class ControllerPlayer : MonoBehaviour
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            BetterJump();
         }
 
         if (GameObject.Find("Currency").GetComponent<Animator>().GetBool("Collected") == true) RunConter();
     }
 
-  public  float time = 0f;
+    float time = 0f;
         void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "ground")
@@ -51,10 +52,13 @@ public class ControllerPlayer : MonoBehaviour
         {
             DeadScreen.SetActive(true);
             GameObject.Find("Spawner").SetActive(false);
-           AddKeysToCollections(countKeys);
+            AddKeysToCollections(countKeys);
             Destroy(gameObject);
         }
     }
+
+
+
 
 
     public void Jump()
@@ -73,6 +77,46 @@ public class ControllerPlayer : MonoBehaviour
             extraJump = 1;
         }
     }
+
+
+    void Awake()
+    {       
+        rb = GetComponent<Rigidbody2D>();
+    }
+    public float fallMultiplier=2.5f,lowJumpMultiplier = 2f;
+    public void BetterJump()
+    {
+        if (isJumping == true && extraJump > 0)//дополнительный прыжок
+        {
+            if (rb.velocity.y <= 0)
+            {
+                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; ;// new Vector2(0, 2) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
+            else if (rb.velocity.y > 0)
+            {
+                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; // new Vector2(0, 2) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            }
+            extraJump--;
+        }
+
+        if (isJumping == false)
+        {
+            if (rb.velocity.y <= 0)
+            {
+                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; ;// new Vector2(0, 2) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
+            else if (rb.velocity.y > 0)
+            {
+                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; // new Vector2(0, 2) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            }
+            gameObject.GetComponent<Animator>().SetBool("Jump", true);
+            isJumping = true;
+            extraJump = 1;
+        }
+            Debug.Log(rb.velocity.y);
+    }
+     
+
 
 
     void RunConter()
