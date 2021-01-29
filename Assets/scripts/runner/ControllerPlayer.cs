@@ -90,11 +90,11 @@ public class ControllerPlayer : MonoBehaviour
         {
             if (rb.velocity.y <= 0)
             {
-                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; ;// new Vector2(0, 2) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+                rb.velocity += new Vector2(0, 20) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; ;// new Vector2(0, 2) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
             }
             else if (rb.velocity.y > 0)
             {
-                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; // new Vector2(0, 2) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+                rb.velocity += new Vector2(0, 20) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; // new Vector2(0, 2) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
             }
             extraJump--;
         }
@@ -103,11 +103,11 @@ public class ControllerPlayer : MonoBehaviour
         {
             if (rb.velocity.y <= 0)
             {
-                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; ;// new Vector2(0, 2) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+                rb.velocity += new Vector2(0, 20) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; ;// new Vector2(0, 2) * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
             }
             else if (rb.velocity.y > 0)
             {
-                rb.velocity += new Vector2(0, -20) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; // new Vector2(0, 2) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+                rb.velocity += new Vector2(0, 20) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime; // new Vector2(0, 2) * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
             }
             gameObject.GetComponent<Animator>().SetBool("Jump", true);
             isJumping = true;
@@ -115,9 +115,24 @@ public class ControllerPlayer : MonoBehaviour
         }
             Debug.Log(rb.velocity.y);
     }
-     
 
+    public void BetterJumpV2()
+    {
+        if (isJumping == true && extraJump > 0)//дополнительный прыжок
+        {
+            rb.velocity = Vector2.up * jumpPower*0.7f;
+            extraJump--;
+        }
 
+        if (isJumping == false)
+        {
+            rb.velocity = Vector2.up * jumpPower;
+            extraJump = 1;
+            gameObject.GetComponent<Animator>().SetBool("Jump", true);
+            isJumping = true;
+        }
+      
+    }
 
     void RunConter()
     {
