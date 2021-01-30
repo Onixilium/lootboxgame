@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -655,7 +655,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -1031,6 +1031,10 @@ MonoBehaviour:
   jumpPower: 20
   DeadScreen: {fileID: 2072920701}
   textCountKeys: {fileID: 2041457524}
+  time: 0
+  jump2: 0
+  maxTime: 0.5
+  timeRest: 0.2
   fallMultiplier: 5
   lowJumpMultiplier: 2.1
 --- !u!61 &685600541
@@ -1189,7 +1193,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -1342,7 +1346,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -1417,7 +1421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1209083344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1479,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -1550,7 +1554,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1364708824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2003,7 +2007,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -2568,6 +2572,7 @@ GameObject:
   - component: {fileID: 1835193870}
   - component: {fileID: 1835193869}
   - component: {fileID: 1835193868}
+  - component: {fileID: 1835193871}
   m_Layer: 5
   m_Name: BtnJump
   m_TagString: Untagged
@@ -2637,9 +2642,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 685600540}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ControllerPlayer, Assembly-CSharp
-        m_MethodName: BetterJumpV2
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2648,7 +2653,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &1835193869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2686,6 +2691,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835193866}
   m_CullTransparentMesh: 0
+--- !u!114 &1835193871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835193866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 685600540}
+          m_TargetAssemblyTypeName: ControllerPlayer, Assembly-CSharp
+          m_MethodName: pointerDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 685600540}
+          m_TargetAssemblyTypeName: ControllerPlayer, Assembly-CSharp
+          m_MethodName: pointerUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1859120859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
@@ -2902,8 +2952,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035418399}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000027865171}
-  m_LocalPosition: {x: -1.223, y: 1.25, z: 3.38}
-  m_LocalScale: {x: 20.350874, y: 7.935324, z: 0.29670802}
+  m_LocalPosition: {x: -0.282, y: 0.477, z: 3.38}
+  m_LocalScale: {x: 22.224823, y: 9.570001, z: 0.29670802}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3088,7 +3138,7 @@ PrefabInstance:
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117690, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}

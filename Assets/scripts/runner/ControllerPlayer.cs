@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ControllerPlayer : MonoBehaviour
 {
-    public bool isJumping = false;
+    public bool isJumping;
     public int extraJump = 1;
     public float jumpPower;
     private Rigidbody2D rb;
@@ -22,15 +22,17 @@ public class ControllerPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isJumping) BetterJump3();
+
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             BetterJump();
-        }
+        }*/
 
         if (GameObject.Find("Currency").GetComponent<Animator>().GetBool("Collected") == true) RunConter();
     }
 
-    float time = 0f;
+   public float time = 0f;
         void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "ground")
@@ -57,6 +59,30 @@ public class ControllerPlayer : MonoBehaviour
         }
     }
 
+    public bool jump2;
+    public void pointerDown()
+    {
+        isJumping = true;         
+    }
+
+    public void pointerUp()
+    {
+        isJumping = false;
+        time = 0f;
+    }
+
+    public float maxTime = 0.5f;
+    public float timeRest = 0.2f;
+    public void BetterJump3()
+    {
+        time += Time.deltaTime;
+        if (time <= maxTime && isJumping)
+        {
+            rb.velocity = Vector2.up * jumpPower * 0.7f;
+        }
+
+        if (time >= (maxTime + timeRest) && isJumping) {  isJumping = false; }
+    }
 
 
 
