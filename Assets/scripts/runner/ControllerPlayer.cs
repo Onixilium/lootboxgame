@@ -40,6 +40,7 @@ public class ControllerPlayer : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("Jump", false);
             isJumping = false;
             extraJump = 1;
+            time = 0f;
         }
         
 
@@ -68,7 +69,7 @@ public class ControllerPlayer : MonoBehaviour
     public void pointerUp()
     {
         isJumping = false;
-        time = 0f;
+
     }
 
     public float maxTime = 0.5f;
@@ -79,6 +80,7 @@ public class ControllerPlayer : MonoBehaviour
         if (time <= maxTime && isJumping)
         {
             rb.velocity = Vector2.up * jumpPower * 0.7f;
+            gameObject.GetComponent<Animator>().SetBool("Jump", true);
         }
 
         if (time >= (maxTime + timeRest) && isJumping) {  isJumping = false; }
