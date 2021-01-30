@@ -26,8 +26,8 @@ public class Spawner : MonoBehaviour
             int currentPlatform = 0;
             devationHieght = Random.Range(Mindevation, Maxdevation);
             if (rand > 25) currentPlatform = 0;
-            if(rand>55) newKey = Instantiate(keys[Random.Range(0, 3)], new Vector2(12f, 0f), Quaternion.identity);
-            if (rand <= 10) currentPlatform = 1; 
+           /* if(rand>55) newKey = Instantiate(keys[Random.Range(0, 3)], new Vector2(12f, 0f), Quaternion.identity);
+            if (rand <= 10) currentPlatform = 1; */
 
             newPlatform = Instantiate(platform[currentPlatform], new Vector2(14.13f, -5.45f + devationHieght), Quaternion.identity); //currentPlatform вместо 0 и  devationHieght вместо 0 после плюса
 
