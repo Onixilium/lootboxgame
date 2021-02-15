@@ -14,9 +14,11 @@ public class ControllerPlayer : MonoBehaviour
     public Text textCountKeys;
     int countKeys = 0;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
     // Update is called once per frame
     void Update()
@@ -61,7 +63,6 @@ public class ControllerPlayer : MonoBehaviour
         if (!onGround) maxTime = 0f;
     }
 
-
     public float maxTime = 0.3f;
 
     public void BetterJump3()
@@ -78,7 +79,6 @@ public class ControllerPlayer : MonoBehaviour
         else { Jump = false; }
     }
 
-
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -89,4 +89,24 @@ public class ControllerPlayer : MonoBehaviour
         if (GameObject.Find("Collection"))
             GameObject.Find("Collection").GetComponent<Collection>().tickets += countKeys;
     }
+
+   bool slide = false;
+   public void ButtonSliding()
+    {
+        var collider = gameObject.GetComponent<BoxCollider2D>();
+        if (!slide)
+        {            
+            collider.offset = new Vector2(0.1983056f, -0.4830694f);
+            collider.size = new Vector2(1.176949f, 0.6693335f);
+            slide = true;
+        }
+        else
+        {
+            collider.offset = new Vector2(0.1983056f, 0.2905495f);
+            collider.size = new Vector2(1.176949f, 2.216571f);            
+            slide = false;
+        }
+        gameObject.GetComponent<Animator>().SetBool("Slide", slide);
+    }
+
 }
