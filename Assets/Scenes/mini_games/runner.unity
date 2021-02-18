@@ -437,7 +437,7 @@ PrefabInstance:
     - target: {fileID: -7959354299514902088, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -735,7 +735,7 @@ PrefabInstance:
     - target: {fileID: -7959354299514902088, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -1281,7 +1281,7 @@ PrefabInstance:
     - target: {fileID: -7959354299514902088, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -1450,7 +1450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1209083344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,14 +1465,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform:
   - {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2, type: 3}
+  - {fileID: 3337353375907117689, guid: d2f88161b60209e4f8ed6dedb86fdb2e, type: 3}
   keys:
   - {fileID: 4670296878168132810, guid: 8e3c9d5c171a5934bab3778e42ed3e3d, type: 3}
   - {fileID: 4670296878168132810, guid: dc0fa16e2330b9045a76e11015b1a21f, type: 3}
   - {fileID: 4670296878168132810, guid: 7a35da5284883c34ba471b9f410addb7, type: 3}
-  minTimeSpawn: 1.1
-  maxTimeSpawn: 7
+  minTimeSpawn: 3.55
+  maxTimeSpawn: 3.55
   Mindevation: 0
-  Maxdevation: 1.5
+  Maxdevation: 0
 --- !u!4 &1209083345
 Transform:
   m_ObjectHideFlags: 0
@@ -2509,7 +2510,7 @@ PrefabInstance:
     - target: {fileID: -7959354299514902088, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
@@ -3243,7 +3244,7 @@ PrefabInstance:
     - target: {fileID: -7959354299514902088, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3337353375907117689, guid: 9f89b930bc290354c8f3dddf34f8f3c2,
         type: 3}

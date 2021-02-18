@@ -15,7 +15,7 @@ public class PlatformBehavior : MonoBehaviour
     void Update()
     {
         transform.position += -transform.right * Time.deltaTime * speed;
-        if (transform.position.x <= -17) GameObject.Destroy(gameObject);
+        if (transform.position.x <= -30) GameObject.Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
