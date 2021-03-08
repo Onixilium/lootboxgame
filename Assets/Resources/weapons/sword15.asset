@@ -16,6 +16,9 @@ MonoBehaviour:
   description: 
   rarity: rare
   art: {fileID: 21300000, guid: 4439aa23eda14bb49954647c2c271630, type: 3}
-  Opened: 0
+  Opened: 1
   attack: 10
   id: 60
+  modifNameCategory: More loot
+  modifMultuply: -0.05
+  modifCount: 0

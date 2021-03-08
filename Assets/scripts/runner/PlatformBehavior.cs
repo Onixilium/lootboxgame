@@ -5,12 +5,14 @@ using System;
 
 public class PlatformBehavior : MonoBehaviour
 {
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
-        
+        var managerLevel = GameObject.Find("ManagerLevel").GetComponent<managerRunnerLevel>();
+        speed = managerLevel.speedPlatforms;
     }
-    public float speed = 1f;
+   
     // Update is called once per frame
     void Update()
     {

@@ -14,6 +14,10 @@ public class weapon : ScriptableObject
     public bool Opened;
     public int attack, id;
 
+    public new string modifNameCategory;
+    public float modifMultuply;
+    public int modifCount;
+
     public void Print()
     {
         Debug.Log(name + ": " + description + " The weapon has attack " + attack);
