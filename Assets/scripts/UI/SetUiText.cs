@@ -29,5 +29,7 @@ public class SetUiText : MonoBehaviour
         scoresText.text = score.ToString();
     }
 
+    
+
 
 }
