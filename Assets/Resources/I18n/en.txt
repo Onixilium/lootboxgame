@@ -1,0 +1,15 @@
+to_dunguon=To dunguon
+collections=Collections
+settings=Settings
+modificators=Modificators
+leader_boards=Leader boards
+rarest_items=Rarest items
+open_chests=Open chests
+wood_chest=Wood chest
+silver_chest=Silver chest
+gold_chest=Gold chest
+delete_saving=Delete saving
+tap_screen=Tap screen
+you_left_the_dungeon=You left the dungeon
+go_to_home=Go to home
+start_again=Start again

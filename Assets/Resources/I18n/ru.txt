@@ -1,0 +1,15 @@
+to_dunguon=В подземелье
+collections=Коллекция
+settings=Настройки
+modificators=Модификаторы
+leader_boards=Таблица рекордов
+rarest_items=Редчайшие предметы
+open_chests=Открытие сундуков
+wood_chest=Деревянный сундук
+silver_chest=Серебрянный сундук
+gold_chest=Золотой сундук
+delete_saving=Удалить сохранение
+tap_screen=Нажмите на экран
+you_left_the_dungeon=Вы покинули подземелье
+go_to_home=Вернуться домой
+start_again=Начать сначала
