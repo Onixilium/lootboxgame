@@ -8,8 +8,8 @@ public class currentGameLanguage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        I18n.lang = language.ToLower();
-        I18n.LoadLanguage();
+     //   I18n.lang = language.ToLower();
+        I18n.LoadLanguage(language.ToLower());
     }
 
     // Update is called once per frame

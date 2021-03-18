@@ -22,11 +22,11 @@ public class LoadArchive : MonoBehaviour
         for (int i = 0; i <=65-1; i++)
         {
             if (collection.weapon[i].Opened == true)
-            { buttonPrefab.GetComponentInChildren<Image>().color = Color.white; }
+            { buttonPrefab.transform.Find("ART").GetComponent<Image>().color = Color.white; }
             else
-            { buttonPrefab.GetComponentInChildren<Image>().color = Color.black;  }             
+            { buttonPrefab.transform.Find("ART").GetComponent<Image>().color = Color.black;  }             
 
-            buttonPrefab.GetComponentInChildren<Image>().sprite = collection.weapon[i].art;
+            buttonPrefab.transform.Find("ART").GetComponent<Image>().sprite = collection.weapon[i].art;
             Button newButton = (Button)Instantiate(buttonPrefab);
             newButton.transform.SetParent(inventory.transform, false);                   
         }

@@ -5,36 +5,37 @@ public class Menu : MonoBehaviour
 {
     public void LoadSceneHomeScreen()
     {
-        SceneManager.LoadScene("HomeScreen");
+        SceneManager.LoadScene("1_HomeScreen");
     }
 
     public void LoadSceneCollection()
     {
-        SceneManager.LoadScene("archiveItems");
+        SceneManager.LoadScene("2_archiveItems");
     }
 
     public void LoadSceneOpenChests()
     {
-        SceneManager.LoadScene("OpenChests");
+        SceneManager.LoadScene("3_OpenChests");
     }
 
+     public static void LoadSceneRunnerGame()
+    {
+        SceneManager.LoadScene("5_runner");
+    }
+    public void LoadSceneSettings()
+    {
+        SceneManager.LoadScene("6_settings");
+    }
+
+
+    public void EndGame()
+    {
+        LoadSceneOpenChests();
+    }
     public GameObject gmFade;
     public void Battle()
     {
         gmFade.SetActive(true);
-    }
-    public void LoadSceneArciveItems()
-    {
-        SceneManager.LoadScene("archiveItems");
-    }
-
-    public static void LoadSceneRunnerGame()
-    {
-        SceneManager.LoadScene("runner");
-    }
-    public void EndGame()
-    {
-        LoadSceneOpenChests();
     }
     public void RestartGame()
     {

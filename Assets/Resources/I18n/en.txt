@@ -13,3 +13,7 @@ tap_screen=Tap screen
 you_left_the_dungeon=You left the dungeon
 go_to_home=Go to home
 start_again=Start again
+reset_modificators=Reset modificators
+language=language
+russian=russian
+english=english

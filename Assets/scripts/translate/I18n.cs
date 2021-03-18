@@ -23,7 +23,7 @@ using UnityEngine.UI;
     /// <summary>
     /// Load language files from ressources
     /// </summary>
-    public static void LoadLanguage()
+    public static void LoadLanguage(string lang)
     {
         if (Fields == null)
             Fields = new Dictionary<string, string>();

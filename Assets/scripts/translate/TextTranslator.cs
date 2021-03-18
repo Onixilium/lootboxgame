@@ -14,8 +14,7 @@ public class TextTranslator : MonoBehaviour
                 text.text = I18n.Fields[TextId];
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnLevelWasLoaded()
     {
         
     }
