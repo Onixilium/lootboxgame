@@ -19,8 +19,11 @@ public class SetUiText : MonoBehaviour
 
     public void SetBronzeKeyText(int quantity)
     {
-        bronzeKeyText = GameObject.Find("bronzeKeyText").GetComponent<Text>();
-        bronzeKeyText.text = quantity.ToString();
+        if (GameObject.Find("bronzeKeyText") != null)
+        {
+            bronzeKeyText = GameObject.Find("bronzeKeyText").GetComponent<Text>();
+            bronzeKeyText.text = quantity.ToString();
+        }
     }
 
     public void SetScoresRunner(float score)

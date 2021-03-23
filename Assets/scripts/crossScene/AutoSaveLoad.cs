@@ -8,7 +8,7 @@ public class AutoSaveLoad : MonoBehaviour
 
     void Start()
     {
-        collection = GameObject.Find("Collection").GetComponent<Collection>();
+        collection = GameObject.Find("GlobalObject").GetComponent<Collection>();
         collection.LoadData();
     }
 

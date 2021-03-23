@@ -11,6 +11,7 @@ public class managerRunnerLevel : MonoBehaviour
     public float scores;
     SetUiText setUiText;
     modificators modificators;
+    GameObject globalObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +22,11 @@ public class managerRunnerLevel : MonoBehaviour
         var player = GameObject.Find("PLAYER").GetComponent<ControllerPlayer>();
         player.jumpForce = this.jumpForce;
 
-        setUiText = GetComponent<SetUiText>();
 
-        modificators = GameObject.Find("Collection").GetComponent<modificators>();
+        globalObject = GameObject.Find("GlobalObject");
+        setUiText = globalObject.GetComponent<SetUiText>();
+        modificators = globalObject.GetComponent<modificators>();
+
 
     }
 

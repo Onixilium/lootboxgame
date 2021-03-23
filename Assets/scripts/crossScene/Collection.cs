@@ -28,7 +28,7 @@ public class Collection : MonoBehaviour
 
         weapon = Resources.LoadAll<weapon>("");
 
-        setUiText = GameObject.Find("MENU").GetComponent<SetUiText>();
+        setUiText = GameObject.Find("GlobalObject").GetComponent<SetUiText>();
         setUiText.SetBronzeKeyText(tickets);
     }
 

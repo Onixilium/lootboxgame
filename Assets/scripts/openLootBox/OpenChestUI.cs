@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class OpenChestUI : MonoBehaviour
 {
-    public GameObject OpenChestUI_gm, SelectChestUI_gm, imgChest_gm, ResultChestUI_gm;
+    public GameObject OpenChestUI_gm, SelectChestUI_gm, imgChest_gm, ResultChestUI_gm, TopUi,BotUI;
     Collection collection;
     public bool BronzeChest = false, SilverChest = false, GoldChest = false;
 
     public void Start()
     {
-        collection = GameObject.Find("Collection").GetComponent<Collection>();
+        collection = GameObject.Find("GlobalObject").GetComponent<Collection>();
     }
 
     public void SelectBronze()
@@ -39,6 +39,8 @@ public class OpenChestUI : MonoBehaviour
         {
             SelectChestUI_gm.SetActive(false);
             OpenChestUI_gm.SetActive(true);
+            TopUi.SetActive(false);
+            BotUI.SetActive(false);
         }
         else
         {
@@ -54,6 +56,7 @@ public class OpenChestUI : MonoBehaviour
             //getRndWeapon.GetComponent<GetRndWeapon>().glowbgAnimation();
             OpenChestUI_gm.SetActive(false);
             ResultChestUI_gm.SetActive(true);
+
         }
     }
 
@@ -61,6 +64,8 @@ public class OpenChestUI : MonoBehaviour
     {
         ResultChestUI_gm.SetActive(false);
         SelectChestUI_gm.SetActive(true);
+        TopUi.SetActive(true);
+        BotUI.SetActive(true);
         GameObject.Find("ImageItem").SetActive(false);
     }
 

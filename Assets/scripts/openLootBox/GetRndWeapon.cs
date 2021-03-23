@@ -22,7 +22,7 @@ public class GetRndWeapon : MonoBehaviour
 
     public void Start()
     {
-        collection = GameObject.Find("Collection").GetComponent<Collection>();
+        collection = GameObject.Find("GlobalObject").GetComponent<Collection>();
         setUiText = GameObject.Find("SceneManager").GetComponent<SetUiText>();
 
         SceneManager = GameObject.Find("SceneManager").GetComponent<OpenChestUI>();

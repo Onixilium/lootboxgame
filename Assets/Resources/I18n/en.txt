@@ -17,3 +17,5 @@ reset_modificators=Reset modificators
 language=language
 russian=russian
 english=english
+chests_opened=Сhests opened
+say_thanks=Say thanks

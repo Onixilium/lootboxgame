@@ -44,7 +44,7 @@ public class GlobalControl : MonoBehaviour
        
         FileStream saveFile = File.Create(filePath);
 
-        LocalCopyOfData = GameObject.Find("Collection").GetComponent<Collection>().localPlayerData;
+        LocalCopyOfData = GameObject.Find("GlobalObject").GetComponent<Collection>().localPlayerData;
         formatter.Serialize(saveFile, LocalCopyOfData);
         saveFile.Close();
     }
@@ -66,7 +66,7 @@ public class GlobalControl : MonoBehaviour
     public void ClearData()
     {        
        File.Delete(filePath); Application.Quit();
-        var col = GameObject.Find("Collection").GetComponent<Collection>();
+        var col = GameObject.Find("GlobalObject").GetComponent<Collection>();
         for(int i = 0; i <= 64; i++)
         {
             col.weapon[i].Opened = false;

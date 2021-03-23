@@ -17,3 +17,5 @@ reset_modificators=Сбросить модификаторы
 language=язык
 russian=Русский
 english=Английсский
+chests_opened=Открыто сундуков
+say_thanks=Сказать спасибо
