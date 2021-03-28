@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 
   rarity: epic
   art: {fileID: 21300000, guid: 4439aa23eda14bb49954647c2c271630, type: 3}
-  Opened: 1
+  Opened: 0
   attack: 10
   id: 65
   modifNameCategory: More loot

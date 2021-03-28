@@ -26,7 +26,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("6_settings");
     }
-
+    public GameObject modifPanel;
+    public void OpenCloseModificators()
+    {
+        if (modifPanel.activeSelf) modifPanel.SetActive(false);
+        else modifPanel.SetActive(true);
+    }
 
     public void EndGame()
     {

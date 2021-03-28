@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sword 4
   description: 
-  rarity: rare
+  rarity: epic
   art: {fileID: 21300000, guid: 2654c5291e17c1f49906103974d67d9d, type: 3}
   Opened: 1
   attack: 10
