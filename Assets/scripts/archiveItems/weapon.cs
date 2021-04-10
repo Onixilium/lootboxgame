@@ -14,9 +14,11 @@ public class weapon : ScriptableObject
     public bool Opened;
     public int attack, id;
 
-    public new string modifNameCategory;
-    public float modifMultuply;
+    public new string modifNameCategory;//категория
+    public float modifMultuply;//Сколько дополняет очков за эту категорию
     public int modifCount;
+
+    public List<string> Modifs;
 
     public void Print()
     {

@@ -170,9 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6c1e559f00d8b459d43ad0020f7a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modificatores:
-  - {fileID: 11400000, guid: cc2c4ef977fca6043bf207569b0a01b7, type: 2}
-  - {fileID: 11400000, guid: 748448863bbbaa840b459b08bf07357e, type: 2}
+  modificatores: []
   multiplyModifs: 0
 --- !u!114 &871199722
 MonoBehaviour:

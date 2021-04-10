@@ -21,7 +21,7 @@ public class checkModificators : MonoBehaviour
     public void AddModificators()
     {
         GameObject gameObject = EventSystem.current.currentSelectedGameObject;//gameobject from pressed button
-        var scriptModificotrs  = GameObject.Find("Collection").GetComponent<modificators>();
+        var scriptModificotrs  = GameObject.Find("GlobalObject").GetComponent<modificators>();
 
         if (gameObject.transform.Find("Text").GetComponent<Text>().text != "")
         {
@@ -29,16 +29,17 @@ public class checkModificators : MonoBehaviour
         }
         else
         {
-            weapon w = new weapon();
+            weapon w = gameObject.GetComponent<WeaponStats>().weapon;
             scriptModificotrs.modificatores.Add(w);
-            gameObject.transform.Find("Image").GetComponent<Image>().color = new Color(255, 255, 255, 255);
+            scriptModificotrs.AddMultuply();
+            gameObject.transform.Find("Image").GetComponent<Image>().color = new Color(255, 127, 0, 255);
             gameObject.transform.Find("Text").GetComponent<Text>().text = scriptModificotrs.modificatores.Count.ToString();
         }
     }
 
     public void ResetModificators()//добавить сброс цифр и картинок у предметов
     {
-        var scriptModificotrs = GameObject.Find("Collection").GetComponent<modificators>();
+        var scriptModificotrs = GameObject.Find("GlobalObject").GetComponent<modificators>();
         scriptModificotrs.modificatores.RemoveRange(0, scriptModificotrs.modificatores.Count);
     }
 }

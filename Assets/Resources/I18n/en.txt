@@ -19,3 +19,5 @@ russian=Russian
 english=English
 chests_opened=Сhests opened
 say_thanks=Say thanks
+reset_progress=Reset progress
+double_keys=Double keys

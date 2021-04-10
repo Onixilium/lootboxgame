@@ -9,13 +9,12 @@ public class modificators : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  multiplyModifs += modificatores[0].modifMultuply;
+       
      //   multiplyModifs += modificatores[1].modifMultuply;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddMultuply()
     {
-        
+        multiplyModifs += modificatores[0].modifMultuply;
     }
 }

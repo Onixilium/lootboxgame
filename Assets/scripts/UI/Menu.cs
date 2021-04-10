@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Menu : MonoBehaviour
 {
@@ -33,6 +35,23 @@ public class Menu : MonoBehaviour
         else modifPanel.SetActive(true);
     }
 
+    public void ClosePreviewItem()
+    {
+        Transform panelTransform = GameObject.Find("PanelItem").transform;
+        for (int i = 0; i <= panelTransform.transform.childCount - 1; i++)
+            panelTransform.GetChild(i).gameObject.SetActive(false);
+    }
+
+    public void OpenPreviewItem()
+    {
+        GameObject panel = GameObject.Find("PanelItem");
+        for (int i = 0; i <= panel.transform.childCount - 1; i++)
+            panel.transform.GetChild(i).gameObject.SetActive(true);
+        panel.transform.Find("ImageItem").GetComponent<Image>().sprite = EventSystem.current.currentSelectedGameObject.GetComponent<WeaponStats>().weapon.art;
+        panel.transform.Find("TxtName").GetComponent<Text>().text = EventSystem.current.currentSelectedGameObject.GetComponent<WeaponStats>().weapon.name;
+        panel.transform.Find("TxtDescription").GetComponent<Text>().text = EventSystem.current.currentSelectedGameObject.GetComponent<WeaponStats>().weapon.description;
+    }
+     
     public void EndGame()
     {
         LoadSceneOpenChests();

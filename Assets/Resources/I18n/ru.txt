@@ -19,3 +19,5 @@ russian=Русский
 english=Английский
 chests_opened=Открыто сундуков
 say_thanks=Сказать спасибо
+reset_progress=Сбросить прогресс
+double_keys=Удвоить награду

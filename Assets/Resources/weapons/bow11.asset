@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c3bbab3fac3664692ae83a8ac26db7, type: 3}
   m_Name: bow11
   m_EditorClassIdentifier: 
-  name: Bow 6
-  description: 
+  name: Bow 11
+  description: Bow for losers
   rarity: common
   art: {fileID: 21300000, guid: 391c9a6f6a0cbad4da210a138e5800e0, type: 3}
   Opened: 1
@@ -22,3 +22,4 @@ MonoBehaviour:
   modifNameCategory: Speed +1
   modifMultuply: 0.25
   modifCount: 3
+  Modifs: []
