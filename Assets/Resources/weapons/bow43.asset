@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bow43
   m_EditorClassIdentifier: 
   name: Bow 8
-  description: 
+  description: Description of item
   rarity: rare
   art: {fileID: 21300000, guid: 739410100d294a343943036c88966679, type: 3}
   Opened: 1
@@ -22,3 +22,4 @@ MonoBehaviour:
   modifNameCategory: Speed +1
   modifMultuply: 0.25
   modifCount: 3
+  Modifs: []

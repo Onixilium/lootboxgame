@@ -31,7 +31,10 @@ public class LoadArchive : MonoBehaviour
             if (collection.weapon[i].Opened == true)
             { buttonPrefab.transform.Find("ART").GetComponent<Image>().color = Color.white; }
             else
-            { buttonPrefab.transform.Find("ART").GetComponent<Image>().color = Color.black;  }
+            {
+                buttonPrefab.transform.Find("ART").GetComponent<Image>().color = Color.black;
+                buttonPrefab.GetComponent<Button>().enabled = false;
+            }
 
             buttonPrefab.transform.Find("ART").GetComponent<Image>().sprite = collection.weapon[i].art;
             Button newButton = (Button)Instantiate(buttonPrefab);

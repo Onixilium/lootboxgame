@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: sword20
   m_EditorClassIdentifier: 
   name: Sword 5
-  description: 
+  description: Description of item
   rarity: epic
-  art: {fileID: 21300000, guid: 4439aa23eda14bb49954647c2c271630, type: 3}
+  art: {fileID: 21300000, guid: fbebe56aa4c13734aacbacf0b744205a, type: 3}
   Opened: 0
   attack: 10
   id: 65
   modifNameCategory: More loot
   modifMultuply: 0.25
   modifCount: 0
+  Modifs: []
