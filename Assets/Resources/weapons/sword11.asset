@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sword 1
   description: Description of item
-  rarity: rare
+  rarity: 1
   art: {fileID: 21300000, guid: 4439aa23eda14bb49954647c2c271630, type: 3}
   Opened: 1
   attack: 2
   id: 56
-  modifNameCategory: More loot
+  modifCategory: 1
   modifMultuply: 0.25
-  modifCount: 0
-  Modifs: []

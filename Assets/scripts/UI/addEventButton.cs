@@ -24,8 +24,8 @@ public class addEventButton : MonoBehaviour
             menu = GameObject.Find("LevelScripts").GetComponent<Menu>();
             ButtonModif.onClick.AddListener(menu.OpenPreviewItem);
         }
-    }
 
+    }
 
 
 }

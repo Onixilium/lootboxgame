@@ -71,7 +71,7 @@ public class LoadArchive : MonoBehaviour
     {
         for (int i = 0; i <= 65 - 1; i++)
         {
-            if (collection.weapon[i].rarity == "epic")
+            if (collection.weapon[i].rarity == weapon.rarityEnum.epic)
             {
                 if (collection.weapon[i].Opened == true)
                 { buttonEpic.transform.Find("ART").GetComponent<Image>().color = Color.white; }

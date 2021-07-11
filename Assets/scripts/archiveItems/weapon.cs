@@ -4,24 +4,39 @@ using System.Collections.Generic;
 using System;
 
 [Serializable]
-[CreateAssetMenu(fileName = "New weapon", menuName ="Weapon")]
+[CreateAssetMenu(fileName = "New weapon", menuName = "Weapon")]
 public class weapon : ScriptableObject
 {
     public new string name;
     public string description;
-    public new string rarity;
+    public rarityEnum rarity;
     public Sprite art;
     public bool Opened;
     public int attack, id;
 
-    public new string modifNameCategory;//категория
-    public float modifMultuply;//Сколько дополняет очков за эту категорию
-    public int modifCount;
+    public modifEnum modifCategory;//категория
+    public float modifMultuply;//цифра категории
 
-    public List<string> Modifs;
 
     public void Print()
     {
         Debug.Log(name + ": " + description + " The weapon has attack " + attack);
     }
+
+
+    public enum modifEnum
+    {
+        Speed,
+        Points,
+        JumpTime
+    }
+
+    public enum rarityEnum 
+    {
+     common,
+     rare ,
+     epic,
+     treasureAncientNations 
+    }
 }
+

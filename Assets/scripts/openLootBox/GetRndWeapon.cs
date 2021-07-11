@@ -19,6 +19,7 @@ public class GetRndWeapon : MonoBehaviour
 
     OpenChestUI SceneManager;
 
+    const int chestCount = 64;
 
     public void Start()
     {
@@ -42,27 +43,26 @@ public class GetRndWeapon : MonoBehaviour
         SetResourcesImage();
         AddToMemory();
     }
-    int itemIndex;
+
     private void SetResourcesImage()
     {
         UnityEngine.Random.seed = System.DateTime.Now.Millisecond;
         var dice = UnityEngine.Random.Range(0, 100);
+        int percent = Mathf.RoundToInt((dice / chestCount) * 100);
 
-        if (SceneManager.BronzeChest)  { w = BronzeChest()[UnityEngine.Random.Range(0, BronzeChest().Count - 1)]; SceneManager.BronzeChest = false; }
-        if (SceneManager.SilverChest) { w = SilverChest()[UnityEngine.Random.Range(0, SilverChest().Count - 1)]; SceneManager.SilverChest = false; }
-        if (SceneManager.GoldChest) { w = GoldChest()[UnityEngine.Random.Range(0, GoldChest().Count - 1)]; SceneManager.GoldChest = false; }
+        if (SceneManager.BronzeChest)  { w = BronzeChest(percent); SceneManager.BronzeChest = false; }
+        if (SceneManager.SilverChest) { w = SilverChest(percent); SceneManager.SilverChest = false; }
+        if (SceneManager.GoldChest) { w = GoldChest(percent); SceneManager.GoldChest = false; }
 
         weaponDisplay.weapon = w;
         weaponDisplay.nameText.text = w.name;
         weaponDisplay.attackText.text = w.attack.ToString();
         weaponDisplay.art.sprite = w.art;
        
-        if (w.rarity == "common") weaponDisplay.rarityText.color = new Color(255, 255, 255);
-        if (w.rarity == "rare") weaponDisplay.rarityText.color = new Color(255, 135, 0);
-        if (w.rarity == "epic") weaponDisplay.rarityText.color = new Color(239, 0, 169);
-        weaponDisplay.rarityText.text = w.rarity;
-
-       //collection.listweap.Add(w);
+        if (w.rarity == weapon.rarityEnum.common) weaponDisplay.rarityText.color = new Color(255, 255, 255);
+        if (w.rarity == weapon.rarityEnum.rare) weaponDisplay.rarityText.color = new Color(255, 135, 0);
+        if (w.rarity == weapon.rarityEnum.epic) weaponDisplay.rarityText.color = new Color(239, 0, 169);
+        weaponDisplay.rarityText.text = w.rarity.ToString();
 
         w.Opened = true;
     }
@@ -75,37 +75,52 @@ public class GetRndWeapon : MonoBehaviour
         collection.SavePlayer();
     }
 
-    public List<weapon> listBronze;
-    public List<weapon> listSilver;
-    public List<weapon> listGold;
-
-    private List<weapon> BronzeChest()
+    private weapon BronzeChest(int percent)
     {
-        for (int i = 0; i <= 64; i++)
-        {
-            if (collection.weapon[i].rarity == "common")
-                listBronze.Add(collection.weapon[i]);
-        }
-        return listBronze;
+        if (percent >= 1 && percent <= 80)    return GetWeapon(Chests.wood, weapon.rarityEnum.common);
+        if (percent >= 81 && percent <= 99)   return GetWeapon(Chests.wood, weapon.rarityEnum.rare);
+        if (percent == 100)                return GetWeapon(Chests.wood, weapon.rarityEnum.epic);
+        return null;
     }
 
-    private List<weapon> SilverChest()
+    private weapon SilverChest(int percent)
     {
-        for (int i = 0; i <= 64; i++)
-        {
-            if (collection.weapon[i].rarity == "rare")
-                listSilver.Add(collection.weapon[i]);
-        }
-      return listSilver;
+        if (percent >= 1 && percent <= 48)   return GetWeapon(Chests.silver, weapon.rarityEnum.common);
+        if (percent >= 49 && percent <= 98)  return GetWeapon(Chests.silver, weapon.rarityEnum.rare);
+        if (percent >= 99 && percent <= 100) return GetWeapon(Chests.silver, weapon.rarityEnum.epic);
+        return null;
     }
 
-    private List<weapon> GoldChest()
+    private weapon GoldChest(int percent)
     {
-        for (int i = 0; i <= 64; i++)
-        {
-            if (collection.weapon[i].rarity == "epic")
-                listGold.Add(collection.weapon[i]);
-        }
-      return listGold;
+        if (percent >= 1 && percent <= 15)      return GetWeapon(Chests.gold, weapon.rarityEnum.common);
+        if (percent >= 16 && percent <= 75)     return GetWeapon(Chests.gold, weapon.rarityEnum.rare);
+        if (percent >= 76 && percent <= 100)    return GetWeapon(Chests.gold, weapon.rarityEnum.epic);
+        return null;
     }
+
+
+    public List<weapon> listWeapons;
+
+    private weapon GetWeapon(Chests chest, weapon.rarityEnum rarity)
+    {
+
+        for (int i = 0; i <= chestCount; i++)
+        {
+            if (collection.weapon[i].rarity == rarity)
+                listWeapons.Add(collection.weapon[i]);
+        }
+
+        var rewardWeapon = listWeapons[UnityEngine.Random.Range(0, listWeapons.Count - 1)];
+        return rewardWeapon;
+    }
+
+
+    private enum Chests
+    {
+        wood,
+        silver,
+        gold
+    }
+
 }

@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bow 4
   description: Description of item
-  rarity: common
+  rarity: 0
   art: {fileID: 21300000, guid: e069106d7f2790842afb048d0f027095, type: 3}
   Opened: 1
   attack: 10
   id: 4
-  modifNameCategory: Speed +1
+  modifCategory: 1
   modifMultuply: 0.25
-  modifCount: 3
-  Modifs: []
