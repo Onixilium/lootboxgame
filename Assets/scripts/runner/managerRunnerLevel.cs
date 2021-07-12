@@ -37,7 +37,9 @@ public class managerRunnerLevel : MonoBehaviour
         time += Time.deltaTime;
         if (time >= 0.5f)
         {
-            scores += 100 * modificators.multiplyModifs;
+            scores += 100 * modificators.points;
+            speedPlatforms += modificators.speed;
+            jumpForce += modificators.jumpForce;
             setUiText.SetScoresRunner(scores);
             time = 0f;
         }

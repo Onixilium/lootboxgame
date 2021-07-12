@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class modificators : MonoBehaviour
 {
-    public List<weapon> modificatores;
-    public float multiplyModifs=0f;
+ 
+
+    public float speed = 0f, points = 0f, jumpForce = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,8 +14,11 @@ public class modificators : MonoBehaviour
      //   multiplyModifs += modificatores[1].modifMultuply;
     }
 
-    public void AddMultuply()
+    public void AddMultuply(weapon w)
     {
-        multiplyModifs += modificatores[0].modifMultuply;
+        if(w.modifCategory == weapon.modifEnum.Speed) speed+= w.modifMultuply;
+        if(w.modifCategory == weapon.modifEnum.Points) points += w.modifMultuply;
+        if(w.modifCategory == weapon.modifEnum.JumpTime) jumpForce += w.modifMultuply;
     }
+
 }

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using  System;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Linq;
 
 public class GetRndWeapon : MonoBehaviour
 {
@@ -48,7 +48,7 @@ public class GetRndWeapon : MonoBehaviour
     {
         UnityEngine.Random.seed = System.DateTime.Now.Millisecond;
         var dice = UnityEngine.Random.Range(0, 100);
-        int percent = Mathf.RoundToInt((dice / chestCount) * 100);
+        int percent = Mathf.RoundToInt(((float)dice/chestCount) * 100);
 
         if (SceneManager.BronzeChest)  { w = BronzeChest(percent); SceneManager.BronzeChest = false; }
         if (SceneManager.SilverChest) { w = SilverChest(percent); SceneManager.SilverChest = false; }
@@ -77,34 +77,34 @@ public class GetRndWeapon : MonoBehaviour
 
     private weapon BronzeChest(int percent)
     {
-        if (percent >= 1 && percent <= 80)    return GetWeapon(Chests.wood, weapon.rarityEnum.common);
-        if (percent >= 81 && percent <= 99)   return GetWeapon(Chests.wood, weapon.rarityEnum.rare);
-        if (percent == 100)                return GetWeapon(Chests.wood, weapon.rarityEnum.epic);
+        if (Enumerable.Range(1, 80).Contains(percent))  return GetWeapon( weapon.rarityEnum.common);
+        if (Enumerable.Range(81, 99).Contains(percent)) return GetWeapon(weapon.rarityEnum.rare);
+        if (percent == 100)                             return GetWeapon( weapon.rarityEnum.epic);
         return null;
     }
 
     private weapon SilverChest(int percent)
     {
-        if (percent >= 1 && percent <= 48)   return GetWeapon(Chests.silver, weapon.rarityEnum.common);
-        if (percent >= 49 && percent <= 98)  return GetWeapon(Chests.silver, weapon.rarityEnum.rare);
-        if (percent >= 99 && percent <= 100) return GetWeapon(Chests.silver, weapon.rarityEnum.epic);
+        if (Enumerable.Range(1, 48).Contains(percent))      return GetWeapon( weapon.rarityEnum.common);
+        if (Enumerable.Range(49, 98).Contains(percent))     return GetWeapon( weapon.rarityEnum.rare);
+        if (Enumerable.Range(99, 100).Contains(percent))    return GetWeapon(weapon.rarityEnum.epic);
         return null;
     }
 
     private weapon GoldChest(int percent)
     {
-        if (percent >= 1 && percent <= 15)      return GetWeapon(Chests.gold, weapon.rarityEnum.common);
-        if (percent >= 16 && percent <= 75)     return GetWeapon(Chests.gold, weapon.rarityEnum.rare);
-        if (percent >= 76 && percent <= 100)    return GetWeapon(Chests.gold, weapon.rarityEnum.epic);
+        if (Enumerable.Range(1, 15).Contains(percent))      return GetWeapon( weapon.rarityEnum.common);
+        if (Enumerable.Range(16, 85).Contains(percent))     return GetWeapon(weapon.rarityEnum.rare);
+        if (Enumerable.Range(86, 100).Contains(percent))    return GetWeapon( weapon.rarityEnum.epic);
         return null;
     }
 
 
-    public List<weapon> listWeapons;
 
-    private weapon GetWeapon(Chests chest, weapon.rarityEnum rarity)
-    {
 
+    private weapon GetWeapon(weapon.rarityEnum rarity)
+    {   
+        List<weapon> listWeapons = new List<weapon>();
         for (int i = 0; i <= chestCount; i++)
         {
             if (collection.weapon[i].rarity == rarity)
