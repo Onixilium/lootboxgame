@@ -22,7 +22,7 @@ public class PlatformBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "GoldKey" || col.gameObject.tag == "WoodKey" || col.gameObject.tag == "SilverKey")  
+        if (col.gameObject.tag == "GoldKey" || col.gameObject.tag == "BronzeKey" || col.gameObject.tag == "SilverKey")  
             {
             col.collider.transform.SetParent(transform);
             col.transform.position = new Vector2(col.transform.position.x-1, col.transform.position.y);

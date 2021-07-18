@@ -11,14 +11,13 @@ public class ControllerPlayer : MonoBehaviour
     private Rigidbody2D rb;
     public bool Jump;
     public GameObject DeadScreen;
-    public Text textCountKeys;
-    int countKeys = 0;
+    public Text TxtBronze,TxtSilver,TxtGold;
+    int bronzeKeys = 0, silverKeys = 0, goldKeys = 0;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
     // Update is called once per frame
     void Update()
@@ -36,18 +35,35 @@ public class ControllerPlayer : MonoBehaviour
         }
 
 
-        if (col.tag == "GoldKey" || col.tag == "WoodKey" || col.tag == "SilverKey")
+        if (col.tag == "BronzeKey" )
         {
-            GameObject.Find("Currency").GetComponent<Animator>().SetBool("Collected", true);
-            countKeys++;
-            textCountKeys.text = countKeys.ToString();
+            GameObject.Find("CounterBronze").GetComponent<Animator>().SetBool("Collected", true);
+            bronzeKeys++;
+            TxtBronze.text = bronzeKeys.ToString();
             Destroy(col.gameObject);
         }
+
+        if (col.tag == "SilverKey")
+        {
+            GameObject.Find("CounterSilver").GetComponent<Animator>().SetBool("Collected", true);
+            silverKeys++;
+            TxtSilver.text = silverKeys.ToString();
+            Destroy(col.gameObject);
+        }
+
+        if (col.tag == "GoldKey" )
+        {
+            GameObject.Find("CounterGold").GetComponent<Animator>().SetBool("Collected", true);
+            goldKeys++;
+            TxtGold.text = goldKeys.ToString();
+            Destroy(col.gameObject);
+        }
+
+
         if (col.tag == "suriken")
         {
             DeadScreen.SetActive(true);
             GameObject.Find("Spawner").SetActive(false);
-            AddKeysToCollections(countKeys);
             Destroy(gameObject);
         }
     }
@@ -84,10 +100,14 @@ public class ControllerPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void AddKeysToCollections(int countKeys)
+    void AddKeysToCollections(int countKeys, GetRndWeapon.Chests chests)
     {
-        if (GameObject.Find("Collection"))
-            GameObject.Find("Collection").GetComponent<Collection>().tickets += countKeys;
+        if(chests == GetRndWeapon.Chests.bronze)      GameObject.Find("Collection").GetComponent<Collection>().quantityBronzeKey += countKeys;
+
+        if (chests == GetRndWeapon.Chests.silver)   GameObject.Find("Collection").GetComponent<Collection>().quantitySilverKey += countKeys;
+
+        if (chests == GetRndWeapon.Chests.gold)     GameObject.Find("Collection").GetComponent<Collection>().quantityGoldKey += countKeys;
+
     }
 
    bool slide = false;

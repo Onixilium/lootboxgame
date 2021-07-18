@@ -5,6 +5,11 @@ using UnityEngine.EventSystems;
 
 public class Menu : MonoBehaviour
 {
+    public void Awake()
+    {
+        SetUiText.SetAllKeyText();
+    }
+
     public void LoadSceneHomeScreen()
     {
         SceneManager.LoadScene("1_HomeScreen");

@@ -7,5 +7,6 @@ public class LoadScene : MonoBehaviour
     void Awake()
     {
         SceneManager.LoadScene(nameScene);
+
     }
 }

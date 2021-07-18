@@ -9,7 +9,7 @@ public class managerRunnerLevel : MonoBehaviour
     public float speedPlatforms;
 
     public float scores;
-    SetUiText setUiText;
+    //SetUiText setUiText;
     modificators modificators;
     GameObject globalObject;
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class managerRunnerLevel : MonoBehaviour
 
 
         globalObject = GameObject.Find("GlobalObject");
-        setUiText = globalObject.GetComponent<SetUiText>();
+      //  setUiText = globalObject.GetComponent<SetUiText>();
         modificators = globalObject.GetComponent<modificators>();
 
 
@@ -40,7 +40,7 @@ public class managerRunnerLevel : MonoBehaviour
             scores += 100 * modificators.points;
             speedPlatforms += modificators.speed;
             jumpForce += modificators.jumpForce;
-            setUiText.SetScoresRunner(scores);
+            SetUiText.SetScoresRunner(scores);
             time = 0f;
         }
     }

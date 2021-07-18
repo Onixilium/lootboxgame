@@ -9,16 +9,12 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class Collection : MonoBehaviour
 {
-   // public List<weapon> listweap;
-
-
-    public int tickets;
-    public int quantityWoodChest, quantitySilverChest, quantityGoldChest;
+    public int quantityBronzeKey, quantitySilverKey, quantityGoldKey;
     public PlayerStatistics localPlayerData = new PlayerStatistics();
     public static Collection Instance;
     public Collection LocalCopyOfData;
     
-    public Text ticketsText;
+    public Text quantityBronzeKeyText, quantitySilverKeyText, quantityGoldKeyText;
     public weapon[] weapon;
 
     SetUiText setUiText;
@@ -28,8 +24,7 @@ public class Collection : MonoBehaviour
 
         weapon = Resources.LoadAll<weapon>("");
 
-        setUiText = GameObject.Find("GlobalObject").GetComponent<SetUiText>();
-        setUiText.SetBronzeKeyText(tickets);
+        SetUpAllTextKeys();
     }
 
     void Update()
@@ -37,12 +32,19 @@ public class Collection : MonoBehaviour
   
     }
 
+    private void SetUpAllTextKeys()
+    {
+       // setUiText = GameObject.Find("GlobalObject").GetComponent<SetUiText>();
+        SetUiText.SetKeyText(quantityBronzeKey, GetRndWeapon.Chests.bronze);
+        SetUiText.SetKeyText(quantitySilverKey, GetRndWeapon.Chests.silver);
+        SetUiText.SetKeyText(quantityGoldKey, GetRndWeapon.Chests.gold);
+    }
+
     private void OnLevelWasLoaded(int level)
     {
         if (GameObject.Find("MENU")  != null)
         {
-            setUiText = GameObject.Find("MENU").GetComponent<SetUiText>();
-            setUiText.SetBronzeKeyText(tickets);//and later will be add other keys
+            SetUpAllTextKeys();
         }
         if(GameObject.Find("clear") != null)
         {

@@ -9,9 +9,9 @@ public class CatchThrow : MonoBehaviour
     public void selfDestroyandAddCoin()
     {
         Destroy(gameObject);
-        GameObject.Find("Collection").GetComponent<Collection>().tickets++;
+       // GameObject.Find("Collection").GetComponent<Collection>().q++;
 
         ticketsText = GameObject.Find("TextTickets").GetComponent<Text>();
-        ticketsText.text = GameObject.Find("Collection").GetComponent<Collection>().tickets.ToString();
+       // ticketsText.text = GameObject.Find("Collection").GetComponent<Collection>().tickets.ToString();
     }
 }

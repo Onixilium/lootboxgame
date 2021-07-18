@@ -19,6 +19,8 @@ public class modificators : MonoBehaviour
         if(w.modifCategory == weapon.modifEnum.Speed) speed+= w.modifMultuply;
         if(w.modifCategory == weapon.modifEnum.Points) points += w.modifMultuply;
         if(w.modifCategory == weapon.modifEnum.JumpTime) jumpForce += w.modifMultuply;
+
+        SetUiText.SetModifValues(speed,points);
     }
 
 }

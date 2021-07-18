@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ManageOpenScene : MonoBehaviour
 {
-    public Text WoodQ, SilverQ, GoldQ;
+    public Text BronzeQ, SilverQ, GoldQ;
     Collection collection;
     public GameObject getRndWeapon;
     // Start is called before the first frame update

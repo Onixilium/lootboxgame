@@ -70,8 +70,7 @@ public class GetRndWeapon : MonoBehaviour
  
     public  void AddToMemory()
     {
-        collection.tickets--;        
-        setUiText.SetBronzeKeyText(collection.tickets);
+        SetUiText.SetKeyText(collection.quantityBronzeKey,  Chests.bronze);
         collection.SavePlayer();
     }
 
@@ -116,9 +115,9 @@ public class GetRndWeapon : MonoBehaviour
     }
 
 
-    private enum Chests
+    public enum Chests
     {
-        wood,
+        bronze,
         silver,
         gold
     }

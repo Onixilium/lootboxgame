@@ -12,25 +12,41 @@ public class OpenChestUI : MonoBehaviour
     public void Start()
     {
         collection = GameObject.Find("GlobalObject").GetComponent<Collection>();
+        SetUiText.SetAllKeyText();
     }
 
     public void SelectBronze()
     {
-        ToogleUIChest();
-        imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/Chest_02_02")[0];
-        BronzeChest = true;
+        if (collection.quantityBronzeKey > 0)
+        {
+            imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/Chest_02_02")[0];
+            BronzeChest = true;
+            collection.quantityBronzeKey--;
+            SetUiText.SetAllKeyText();
+            ToogleUIChest();
+        }
     }
     public void SelectSilver()
     {
-        ToogleUIChest();
-        imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[1];
-        SilverChest = true;
+        if (collection.quantitySilverKey > 0)
+        {
+            imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[1];
+            SilverChest = true;
+            collection.quantitySilverKey--;
+            SetUiText.SetAllKeyText();
+            ToogleUIChest();
+        }
     }
     public void SelectGold()
     {
-        ToogleUIChest();
-        imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[2];
-        GoldChest = true;
+        if (collection.quantityGoldKey > 0)
+        {
+            imgChest_gm.GetComponent<Image>().sprite = Resources.LoadAll<Sprite>("pic/3typeschest")[2];
+            GoldChest = true;
+            collection.quantityGoldKey--;
+            SetUiText.SetAllKeyText();
+            ToogleUIChest();
+        }
     }
 
     void ToogleUIChest()
@@ -49,15 +65,13 @@ public class OpenChestUI : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Calls from editor
+    /// </summary>
     public void OpenChest()
     {
-        if (collection.tickets > 0)
-        {
-            //getRndWeapon.GetComponent<GetRndWeapon>().glowbgAnimation();
-            OpenChestUI_gm.SetActive(false);
-            ResultChestUI_gm.SetActive(true);
-
-        }
+        OpenChestUI_gm.SetActive(false);
+        ResultChestUI_gm.SetActive(true);
     }
 
     public void DefaultViews()
